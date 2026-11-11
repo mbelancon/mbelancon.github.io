@@ -229,6 +229,7 @@ section.subsec>.wrap{padding-block:8px 52px}
 .story.traj{margin-top:20px}
 .shead.sm{font-size:20px}
 .story.traj .sbody>*{max-width:none}
+.story.aboutd .sbody>*{max-width:none}
 .story.traj .time{margin-top:8px;border-top:0}
 
 /* network map */
@@ -311,11 +312,10 @@ svg.dim .edge.on{opacity:.95;stroke-width:1.6} svg.dim .node.on{opacity:1}
   <div class="wrap">
     <a class="brand" href="#top">M. P. Belançon</a>
     <nav class="links" aria-label="Seções" id="topnav">
-      <a href="#sobre" data-k="sobre"><span class="pt">Sobre</span><span class="en">About</span></a>
-      <a href="#ensino" data-k="ensino"><span class="pt">Ensino</span><span class="en">Teaching</span></a>
       <a href="#pesquisa" data-k="pesquisa"><span class="pt">Pesquisa</span><span class="en">Research</span></a>
       <a href="#ferramentas" data-k="ferramentas"><span class="pt">Instrumentação</span><span class="en">Instruments</span></a>
-      <a href="#divulgacao" data-k="divulgacao"><span class="pt">Divulgação</span><span class="en">Outreach</span></a>
+      <a href="#divulgacao" data-k="divulgacao"><span class="pt">Divulgação Científica</span><span class="en">Science Communication</span></a>
+      <a href="#ensino" data-k="ensino"><span class="pt">Ensino</span><span class="en">Teaching</span></a>
       <a href="#contato" data-k="contato"><span class="pt">Contato</span><span class="en">Contact</span></a>
     </nav>
     <button class="lang" id="lang-toggle" type="button" aria-label="Mudar idioma / Switch language">EN</button>
@@ -350,57 +350,246 @@ svg.dim .edge.on{opacity:.95;stroke-width:1.6} svg.dim .node.on{opacity:1}
   </div>
 </div>
 
-<section id="sobre">
+<section id="pesquisa">
   <div class="wrap">
-    <h2><span class="pt">Sobre</span><span class="en">About</span></h2>
-    <div class="about">
-      <img class="portrait" src="foto.jpg" alt="Marcos Paulo Belançon" width="640" height="800">
+    <h2><span class="pt">Pesquisa</span><span class="en">Research</span></h2>
+    <nav class="subnav" aria-label="Pesquisa">
+      <a href="#linhas"><span class="pt">Linhas</span><span class="en">Themes</span></a>
+      <a href="#projetos"><span class="pt">Projetos</span><span class="en">Projects</span></a>
+      <a href="#rede"><span class="pt">Rede de coautores</span><span class="en">Co-authors</span></a>
+      <a href="#publicacoes"><span class="pt">Publicações</span><span class="en">Publications</span></a>
+      <a href="#orientacoes"><span class="pt">Orientações</span><span class="en">Supervision</span></a>
+    </nav>
+    <h3 class="subh" id="linhas"><span class="pt">Linhas de pesquisa</span><span class="en">Research themes</span></h3>
+    <p class="sub"><span class="pt">Cinco frentes que se alimentam: os métodos fototérmicos medem os materiais, os materiais viram dispositivos, e os dispositivos respondem a perguntas sobre energia.</span><span class="en">Five connected fronts: photothermal methods measure the materials, materials become devices, and devices answer questions about energy.</span></p>
+    <div class="themes">
+      <div class="theme"><span class="tag">01 · TL / TM</span>
+        <h3><span class="pt">Espectroscopia fototérmica</span><span class="en">Photothermal spectroscopy</span></h3>
+        <p><span class="pt">Lente térmica e espelho térmico resolvidos no tempo: modelos, efeito do acoplamento térmico com o fluido, ondas de pressão em nanossegundos.</span><span class="en">Time-resolved thermal lens and thermal mirror: models, sample–fluid heat coupling, nanosecond pressure waves.</span></p>
+        <a href="#g-P" data-jump="P"><span class="pt">Ver trabalhos →</span><span class="en">See papers →</span></a></div>
+      <div class="theme"><span class="tag">02 · RE<sup>3+</sup></span>
+        <h3><span class="pt">Vidros e materiais luminescentes</span><span class="en">Glasses and luminescent materials</span></h3>
+        <p><span class="pt">Teluritos, aluminosilicatos e cerâmicas dopados com terras-raras para lasers, amplificadores ópticos, fibras e iluminação.</span><span class="en">Rare-earth doped tellurites, aluminosilicates and ceramics for lasers, optical amplifiers, fibres and lighting.</span></p>
+        <a href="#g-G" data-jump="G"><span class="pt">Ver trabalhos →</span><span class="en">See papers →</span></a></div>
+      <div class="theme"><span class="tag">03 · c-Si</span>
+        <h3><span class="pt">Vidro para energia solar</span><span class="en">Glass for solar energy</span></h3>
+        <p><span class="pt">Vidros de cobertura, conversão espectral, filtros UV e reaproveitamento do vidro de painéis fotovoltaicos em fim de vida.</span><span class="en">Cover glasses, spectral conversion, UV filters and upcycling of glass from end-of-life photovoltaic panels.</span></p>
+        <a href="#g-S" data-jump="S"><span class="pt">Ver trabalhos →</span><span class="en">See papers →</span></a></div>
+      <div class="theme"><span class="tag">04 · GW · sala de aula</span>
+        <h3><span class="pt">Energia, sociedade e ensino</span><span class="en">Energy, society and teaching</span></h3>
+        <p><span class="pt">Cenários para o sistema elétrico brasileiro, transição energética e hidrogênio verde, e o ensino de física ligado à tecnologia.</span><span class="en">Scenarios for the Brazilian power system, energy transition and green hydrogen, and physics teaching tied to technology.</span></p>
+        <a href="#g-E" data-jump="E"><span class="pt">Ver trabalhos →</span><span class="en">See papers →</span></a></div>
+      <div class="theme"><span class="tag">05 · STM32 · LIBS</span>
+        <h3><span class="pt">Instrumentação e colaborações</span><span class="en">Instrumentation and collaborations</span></h3>
+        <p><span class="pt">Técnicas científicas montadas sobre microcontroladores, instrumentos de bancada, espectroscopia com quimiometria e parcerias em biometria e redes ópticas.</span><span class="en">Scientific techniques built on microcontrollers, bench instruments, spectroscopy with chemometrics, and partnerships in biometrics and optical networks.</span></p>
+        <a href="#ferramentas"><span class="pt">Ver instrumentos →</span><span class="en">See instruments →</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section id="projetos" class="subsec">
+  <div class="wrap">
+    <h3 class="subh"><span class="pt">Projetos e redes de pesquisa</span><span class="en">Projects and research networks</span></h3>
+    <p class="sub"><span class="pt">Projetos de que participo ou participei, como membro da equipe ou colaborador.</span><span class="en">Projects I take or took part in, as a team member or collaborator.</span></p>
+    <div class="two pj">
+      <div class="card"><span class="tag">FINEP · UTFPR Pato Branco</span>
+        <h3>REH2V-FV</h3>
+        <p><span class="pt">Reator Eletrocatalítico Fotovoltaico com Conversores Autônomos de Energia para a Geração de Hidrogênio Verde. O projeto implanta o Centro Temático de Transição Energética da UTFPR, um centro multidisciplinar de desenvolvimento de tecnologias para a transição energética, com R$ 13,1 milhões da Finep. Reúne docentes de Física, Química e de várias engenharias. Integro a equipe do centro.</span><span class="en">Photovoltaic Electrocatalytic Reactor with Autonomous Energy Converters for Green Hydrogen Generation. The project sets up the UTFPR Thematic Centre for Energy Transition, a multidisciplinary centre developing technologies for the energy transition, with R$ 13.1 million from Finep. It brings together faculty from Physics, Chemistry and several engineering fields. I am a member of the centre's team.</span></p>
+        <a href="https://www.utfpr.edu.br/noticias/geral/divulgacao-cientifica/utfpr-recebe-r-13-1-mi-para-implantar-o-1o-centro-de-transicao-energetica-do-parana" target="_blank" rel="noopener"><span class="pt">Notícia da UTFPR</span><span class="en">UTFPR news story</span></a></div>
+      <div class="card"><span class="tag"><span class="pt">INCT do CNPq · sede na UEM</span><span class="en">CNPq INCT · hosted at UEM</span></span>
+        <h3>INPIIF</h3>
+        <p><span class="pt">Instituto Nacional de Pesquisa e Inovação em Imagem Fototérmica. Rede de cooperação para desenvolver métodos de imagem optoacústica, fotoacústica e fototérmica no infravermelho médio, com aplicações em diagnóstico e acompanhamento de terapias. Reúne 18 instituições brasileiras, entre elas a UTFPR, e 18 do exterior. Integro a equipe do instituto.</span><span class="en">National Institute for Research and Innovation in Photothermal Imaging. A cooperative network developing mid-infrared optoacoustic, photoacoustic and photothermal imaging methods, with applications in diagnosis and therapy monitoring. It brings together 18 Brazilian institutions, UTFPR among them, and 18 from abroad. I am a member of the institute's team.</span></p>
+        <a href="https://inpiif.uem.br/" target="_blank" rel="noopener">inpiif.uem.br</a></div>
+      <div class="card"><span class="tag">LE STUDIUM · CEMHTI–CNRS · 2025–2026</span>
+        <h3><span class="pt">Vitrocerâmicas a partir de vidro solar</span><span class="en">Glass-ceramics from solar glass</span></h3>
+        <p><span class="pt">Pesquisador visitante no laboratório CEMHTI (CNRS, Orléans), com o LE STUDIUM Visiting Researcher Award, no projeto de reaproveitamento do vidro de cobertura de painéis em fim de vida para produzir vitrocerâmicas.</span><span class="en">Visiting researcher at the CEMHTI laboratory (CNRS, Orléans), with the LE STUDIUM Visiting Researcher Award, on the project to reuse cover glass from end-of-life panels to produce glass-ceramics.</span></p>
+        <a href="https://www.lestudium-ias.com/fellows/marcos-belancon" target="_blank" rel="noopener"><span class="pt">Página de fellow no LE STUDIUM</span><span class="en">Fellow page at LE STUDIUM</span></a></div>
+      <div class="card"><span class="tag"><span class="pt">CNPq · desde 2023</span><span class="en">CNPq · since 2023</span></span>
+        <h3><span class="pt">Reciclagem de vidros de painéis fotovoltaicos</span><span class="en">Recycling of photovoltaic panel glass</span></h3>
+        <p><span class="pt">Rotas para dar um segundo uso ao vidro de painéis em fim de vida: recuperação da chapa inteira, novos vidros oxifluoretos e conversores espectrais.</span><span class="en">Routes to give end-of-life panel glass a second use: whole-sheet recovery, new oxyfluoride glasses and spectral converters.</span></p>
+        <a href="#g-S" data-jump="S"><span class="pt">Ver os artigos →</span><span class="en">See the papers →</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section id="rede" class="subsec">
+  <div class="wrap">
+    <h3 class="subh"><span class="pt">Rede de coautores</span><span class="en">Co-author network</span></h3>
+    <p class="sub"><span class="pt">A bolha central sou eu; cada uma das outras é um coautor, com área proporcional ao número de artigos que publicamos juntos. Quanto mais artigos comigo, mais perto do centro; ao redor, ficam lado a lado os coautores que costumam assinar os mesmos trabalhos. As linhas ligam quem tem dois ou mais artigos em comum. Toque em uma bolha para destacar e listar os parceiros dela.</span><span class="en">The central bubble is me; each of the others is a co-author, with area proportional to the number of articles we published together. The more articles with me, the closer to the centre; around the circle, co-authors who usually sign the same papers sit side by side. Lines join people with two or more articles in common. Tap a bubble to highlight and list its partners.</span></p>
+    <figure class="mapfig"><div class="mapscroll"><svg id="net-b" role="img" aria-label="Diagrama de bolhas da rede de coautores"></svg></div>
+      <div class="legend">
+        <span><i class="dot" style="background:var(--s-utf)"></i>UTFPR</span>
+        <span><i class="dot" style="background:var(--s-uem)"></i>UEM</span>
+        <span><i class="dot" style="background:var(--s-br)"></i><span class="pt">Outras instituições no Brasil</span><span class="en">Other institutions in Brazil</span></span>
+        <span><i class="dot" style="background:var(--s-ext)"></i><span class="pt">Exterior</span><span class="en">Abroad</span></span>
+        <span><span class="pt">Número ao lado do nome: artigos em coautoria comigo</span><span class="en">Number next to each name: articles co-authored with me</span></span>
+      </div>
+    </figure>
+    <h3 class="nh" id="pl-h" aria-live="polite"></h3>
+    <ul class="rank" id="pl-c"></ul>
+    <p class="cap"><span class="pt">Contagem sobre os 38 artigos em periódicos do Lattes; a rede reúne os coautores com dois ou mais artigos em comum.</span><span class="en">Counted over the 38 journal articles in the Lattes CV; the network gathers co-authors with two or more articles in common.</span></p>
+  </div>
+</section>
+
+<section id="publicacoes" class="subsec">
+  <div class="wrap">
+    <h3 class="subh"><span class="pt">Publicações por tema</span><span class="en">Publications by theme</span></h3>
+    <p class="sub"><span class="pt">Artigos em periódicos, capítulo, trabalhos em conferências e preprints, cada um com um resumo de uma linha.</span><span class="en">Journal articles, a book chapter, conference papers and preprints, each with a one-line summary.</span></p>
+    <div class="chips" id="chips" role="group" aria-label="Filtrar por tema"></div>
+    <div id="pub-root"></div>
+  </div>
+</section>
+
+<section id="orientacoes" class="subsec">
+  <div class="wrap">
+    <h3 class="subh"><span class="pt">Dissertações de mestrado orientadas e coorientadas</span><span class="en">MSc dissertations supervised and co-supervised</span></h3>
+    <p class="sub"><span class="pt">Orientei e coorientei dissertações de mestrado na área de química, em um <a href="https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgtp-pb" target="_blank" rel="noopener">programa de pós-graduação</a> da UTFPR Pato Branco. Os textos completos estão no <a href="https://repositorio.utfpr.edu.br/jspui/simple-search?location=1%2F11&amp;query=belan%C3%A7on&amp;rpp=10&amp;sort_by=score&amp;order=desc" target="_blank" rel="noopener">repositório institucional</a>.</span><span class="en">I have supervised and co-supervised MSc dissertations in chemistry, in a <a href="https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgtp-pb" target="_blank" rel="noopener">graduate programme</a> at UTFPR Pato Branco. Full texts are in the <a href="https://repositorio.utfpr.edu.br/jspui/simple-search?location=1%2F11&amp;query=belan%C3%A7on&amp;rpp=10&amp;sort_by=score&amp;order=desc" target="_blank" rel="noopener">institutional repository</a>.</span></p>
+    <ul class="time diss"><li><span class="y">2026</span><div><b>Emissão vermelha intensa do complexo β-dicetonato de Eu(III) em material híbrido sílica-orgânico: síntese e propriedades espectroscópicas</b><span class="d">Anaxagora Rodolfo Luft</span></div></li><li><span class="y">2025</span><div><b>Reutilização de vidros de cobertura de painéis fotovoltaicos para produção de silicatos com baixa temperatura de fusão</b><span class="d">Rafaela Valcarenghi</span></div></li><li><span class="y">2023</span><div><b>Síntese e caracterização de xerogéis sílica/orgânico dopados com cério visando a aplicação como filtro UV para painéis fotovoltaicos</b><span class="d">Jefferson Cristiano Gemelli</span></div></li><li><span class="y">2021</span><div><b>Ciclo de vida de painéis fotovoltaicos: recuperação do vidro como alternativa ao descarte</b><span class="d">Francisnara Tonholi</span></div></li><li><span class="y">2019</span><div><b>Incorporação de óxido de cério em vidros teluritos para o desenvolvimento de dispositivos ópticos</b><span class="d">Edenilson da Silva</span></div></li><li><span class="y">2018</span><div><b>Incorporação de nanopartículas de prata em vidros teluritos dopados com Pr3+</b><span class="d">Maiara Mitiko Taniguchi</span></div></li></ul>
+  </div>
+</section>
+
+<section id="ferramentas">
+  <div class="wrap">
+    <h2><span class="pt">Instrumentação científica aberta</span><span class="en">Open scientific instrumentation</span></h2>
+    <p class="sub"><span class="pt">Tenho trabalhado cada vez mais com microcontroladores e com a montagem de técnicas científicas sobre eles: hardware de baixo custo, firmware e software abertos, para que qualquer laboratório possa reproduzir as medidas.</span><span class="en">More and more of my work is on microcontrollers and on building scientific techniques on top of them: low-cost hardware with open firmware and software, so that any lab can reproduce the measurements.</span></p>
+    <div class="feature" id="soi">
       <div class="prose">
-        <p class="pt">Sou físico formado pela Universidade Estadual de Maringá (graduação em 2007, mestrado em 2009 e doutorado em 2012), onde comecei a trabalhar com lente térmica e espelho térmico resolvidos no tempo e com vidros aluminosilicatos de cálcio dopados com Yb³⁺ e Ce³⁺, com estágio de doutorado na Université Claude Bernard Lyon 1. Fiz pós-doutorados na UNICAMP (2012–2013), com fibras ópticas de vidros teluritos, e na Université Pierre et Marie Curie, em Paris (2014–2015).</p>
-        <p class="pt">Desde 2013 sou professor da UTFPR, Câmpus Pato Branco, no Departamento Acadêmico de Física (DAFIS) e oriento dissertações de mestrado na área de química, em um <a href="https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgtp-pb" target="_blank" rel="noopener">programa de pós-graduação</a> do câmpus. Meu grupo trabalha com técnicas espectroscópicas, materiais ópticos e suas aplicações, desenvolve dispositivos e sensores em parceria com empresas, monta técnicas de medida sobre microcontroladores e integra a equipe que criou o centro temático em transição energética da universidade.</p>
-        <p class="pt">Entre 2025 e 2026 fiz um pós-doutorado na UEM, sob supervisão de Vitor S. Zanuto, e fui pesquisador visitante no CEMHTI (CNRS, Orléans), com o LE STUDIUM Visiting Researcher Award, do LE STUDIUM Loire Valley Institute for Advanced Studies, estudando vidros e vitrocerâmicas obtidos a partir de vidro reciclado de painéis solares.</p>
-        <p class="en">I am a physicist trained at the State University of Maringá (BSc 2007, MSc 2009, PhD 2012), where I started working on time-resolved thermal lens and thermal mirror methods and on Yb³⁺- and Ce³⁺-doped calcium aluminosilicate glasses, with a doctoral stay at Université Claude Bernard Lyon 1. I held postdoctoral positions at UNICAMP (2012–2013), on tellurite glass optical fibres, and at Université Pierre et Marie Curie in Paris (2014–2015).</p>
-        <p class="en">Since 2013 I have been a professor at UTFPR Pato Branco, in the Physics Department (DAFIS) and I supervise MSc dissertations in chemistry, in a <a href="https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgtp-pb" target="_blank" rel="noopener">graduate programme</a> on campus. My group works on spectroscopic techniques, optical materials and their applications, builds devices and sensors with industry partners, sets up measurement techniques on microcontrollers, and is part of the team that created the university's thematic centre on energy transition.</p>
-        <p class="en">In 2025–2026 I did a postdoc at UEM, supervised by Vitor S. Zanuto, and was a visiting researcher at CEMHTI (CNRS, Orléans), with the LE STUDIUM Visiting Researcher Award, from LE STUDIUM Loire Valley Institute for Advanced Studies, studying glasses and glass-ceramics made from recycled solar panel glass.</p>
+        <p class="eyebrow"><span class="pt">Instrumento aberto · STM32</span><span class="en">Open instrument · STM32</span></p>
+        <h3>SOI</h3>
+        <p><span class="pt">Um microcontrolador STM32 (Black Pill) modula um laser de diodo e adquire, ao mesmo tempo, o sinal óptico de um fotodiodo OPT101 e o sinal acústico de um microfone MEMS INMP441. A demodulação lock-in é digital, feita no computador pela interface em Python.</span><span class="en">An STM32 microcontroller (Black Pill) modulates a diode laser and acquires, at the same time, the optical signal from an OPT101 photodiode and the acoustic signal from an INMP441 MEMS microphone. Lock-in demodulation is digital, done on the computer by the Python interface.</span></p>
+        <p><span class="pt">Com a mesma placa o equipamento é capaz de fazer fotoacústica, lente térmica ou espelho térmico, efeito miragem, z-scan e medidas de luminescência resolvida no tempo, usando lasers de diodo acessíveis e sem amplificador lock-in ou chopper caros. O resultado é um sistema miniaturizado e portátil.</span><span class="en">With the same board the instrument can perform photoacoustics, thermal lens or thermal mirror, mirage effect, z-scan and time-resolved luminescence measurements, using affordable diode lasers and without an expensive lock-in amplifier or chopper. The result is a miniaturised, portable system.</span></p>
+        <ul class="tech" aria-label="Técnicas">
+          <li><span class="pt">Fotoacústica</span><span class="en">Photoacoustics</span></li>
+          <li><span class="pt">Lente térmica</span><span class="en">Thermal lens</span></li>
+          <li><span class="pt">Espelho térmico</span><span class="en">Thermal mirror</span></li>
+          <li><span class="pt">Efeito miragem</span><span class="en">Mirage effect</span></li>
+          <li>Z-scan</li>
+          <li><span class="pt">Luminescência resolvida no tempo</span><span class="en">Time-resolved luminescence</span></li>
+        </ul>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/mbelancon/SOI/releases/latest" target="_blank" rel="noopener"><span class="pt">Baixar a interface</span><span class="en">Download the interface</span></a>
+          <a class="btn" href="https://github.com/mbelancon/SOI" target="_blank" rel="noopener"><span class="pt">Firmware, ligações e manual</span><span class="en">Firmware, wiring and manual</span></a>
+        </div>
+      </div>
+      <div class="hw">
+        <figure class="hwfig"><svg viewBox="0 0 430 140" role="img" aria-label="Black Pill STM32F401">
+<rect x="22" y="4" width="390" height="132" rx="8" class="pcb"/>
+<circle cx="38.0" cy="16" r="4.2" class="pad"/><circle cx="56.2" cy="16" r="4.2" class="pad"/><circle cx="74.4" cy="16" r="4.2" class="pad"/><circle cx="92.6" cy="16" r="4.2" class="pad"/><circle cx="110.8" cy="16" r="4.2" class="pad"/><circle cx="129.0" cy="16" r="4.2" class="pad"/><circle cx="147.2" cy="16" r="4.2" class="pad"/><circle cx="165.4" cy="16" r="4.2" class="pad"/><circle cx="183.6" cy="16" r="4.2" class="pad"/><circle cx="201.8" cy="16" r="4.2" class="pad"/><circle cx="220.0" cy="16" r="4.2" class="pad"/><circle cx="238.2" cy="16" r="4.2" class="pad"/><circle cx="256.4" cy="16" r="4.2" class="pad"/><circle cx="274.6" cy="16" r="4.2" class="pad"/><circle cx="292.8" cy="16" r="4.2" class="pad"/><circle cx="311.0" cy="16" r="4.2" class="pad"/><circle cx="329.2" cy="16" r="4.2" class="pad"/><circle cx="347.4" cy="16" r="4.2" class="pad"/><circle cx="365.6" cy="16" r="4.2" class="pad"/><circle cx="383.8" cy="16" r="4.2" class="pad"/><circle cx="38.0" cy="124" r="4.2" class="pad"/><circle cx="56.2" cy="124" r="4.2" class="pad"/><circle cx="74.4" cy="124" r="4.2" class="pad"/><circle cx="92.6" cy="124" r="4.2" class="pad"/><circle cx="110.8" cy="124" r="4.2" class="pad"/><circle cx="129.0" cy="124" r="4.2" class="pad"/><circle cx="147.2" cy="124" r="4.2" class="pad"/><circle cx="165.4" cy="124" r="4.2" class="pad"/><circle cx="183.6" cy="124" r="4.2" class="pad"/><circle cx="201.8" cy="124" r="4.2" class="pad"/><circle cx="220.0" cy="124" r="4.2" class="pad"/><circle cx="238.2" cy="124" r="4.2" class="pad"/><circle cx="256.4" cy="124" r="4.2" class="pad"/><circle cx="274.6" cy="124" r="4.2" class="pad"/><circle cx="292.8" cy="124" r="4.2" class="pad"/><circle cx="311.0" cy="124" r="4.2" class="pad"/><circle cx="329.2" cy="124" r="4.2" class="pad"/><circle cx="347.4" cy="124" r="4.2" class="pad"/><circle cx="365.6" cy="124" r="4.2" class="pad"/><circle cx="383.8" cy="124" r="4.2" class="pad"/>
+<rect x="2" y="48" width="44" height="44" rx="6" class="metal"/><rect x="8" y="56" width="26" height="28" rx="4" class="pcb2"/>
+<g transform="translate(232 70) rotate(45)"><rect x="-27" y="-27" width="54" height="54" rx="3" class="chip"/><circle cx="-19" cy="-19" r="2.5" class="pad"/></g>
+<text x="232" y="74" text-anchor="middle" class="silk">STM32</text>
+<rect x="78" y="42" width="22" height="16" rx="3" class="metal"/><circle cx="89" cy="50" r="4.5" class="chip"/>
+<rect x="78" y="82" width="22" height="16" rx="3" class="metal"/><circle cx="89" cy="90" r="4.5" class="chip"/>
+<rect x="124" y="56" width="34" height="14" rx="6" class="metal"/>
+<rect x="318" y="50" width="26" height="40" rx="2" class="chip"/>
+<rect x="366" y="44" width="12" height="52" rx="2" class="pcb2"/><circle cx="372" cy="52" r="3.4" class="pad"/><circle cx="372" cy="64" r="3.4" class="pad"/><circle cx="372" cy="76" r="3.4" class="pad"/><circle cx="372" cy="88" r="3.4" class="pad"/>
+<rect x="170" y="100" width="10" height="6" class="led"/>
+<text x="62" y="38" class="silk">NRST</text><text x="62" y="110" class="silk">BOOT0</text><text x="352" y="38" class="silk">SWD</text>
+</svg><figcaption class="cap"><span class="pt">Black Pill STM32F401: gera a modulação do laser e faz a aquisição (ADC e I2S), ligada ao computador por USB-C.</span><span class="en">Black Pill STM32F401: generates the laser modulation and handles acquisition (ADC and I2S), connected to the computer over USB-C.</span></figcaption></figure>
+        <div class="pair"><figure class="hwfig small"><svg viewBox="0 0 150 150" role="img" aria-label="Microfone MEMS INMP441">
+<circle cx="75" cy="75" r="70" class="pcb"/>
+<rect x="52" y="48" width="46" height="34" rx="3" class="metal"/><circle cx="64" cy="58" r="3.2" class="hole"/>
+<circle cx="38" cy="24" r="6" class="pad"/><circle cx="75" cy="24" r="6" class="pad"/><circle cx="112" cy="24" r="6" class="pad"/>
+<circle cx="38" cy="126" r="6" class="pad"/><circle cx="75" cy="126" r="6" class="pad"/><circle cx="112" cy="126" r="6" class="pad"/>
+<text x="38" y="42" text-anchor="middle" class="silk">SD</text><text x="75" y="42" text-anchor="middle" class="silk">VDD</text><text x="112" y="42" text-anchor="middle" class="silk">GND</text>
+<text x="38" y="114" text-anchor="middle" class="silk">L/R</text><text x="75" y="114" text-anchor="middle" class="silk">WS</text><text x="112" y="114" text-anchor="middle" class="silk">SCK</text>
+<text x="75" y="98" text-anchor="middle" class="silk">INMP441</text>
+</svg><figcaption class="cap"><span class="pt">INMP441: microfone MEMS digital (I2S, 24 bits) que capta o sinal fotoacústico.</span><span class="en">INMP441: digital MEMS microphone (I2S, 24 bit) that picks up the photoacoustic signal.</span></figcaption></figure><figure class="hwfig small"><svg viewBox="0 0 150 150" role="img" aria-label="Fotodiodo OPT101">
+<g class="leg"><rect x="28" y="14" width="13" height="26" rx="2" class="metal"/><rect x="28" y="110" width="13" height="26" rx="2" class="metal"/><rect x="55" y="14" width="13" height="26" rx="2" class="metal"/><rect x="55" y="110" width="13" height="26" rx="2" class="metal"/><rect x="82" y="14" width="13" height="26" rx="2" class="metal"/><rect x="82" y="110" width="13" height="26" rx="2" class="metal"/><rect x="109" y="14" width="13" height="26" rx="2" class="metal"/><rect x="109" y="110" width="13" height="26" rx="2" class="metal"/></g>
+<rect x="16" y="34" width="118" height="82" rx="6" class="clear"/>
+<rect x="56" y="56" width="38" height="38" class="pd"/><rect x="60" y="60" width="30" height="30" class="pd2"/>
+<path d="M56 75H34M94 75h22M75 56V44M75 94v12" class="bond"/>
+<circle cx="28" cy="104" r="4" class="pcb2"/>
+<text x="75" y="130" text-anchor="middle" class="silk2">OPT101</text>
+</svg><figcaption class="cap"><span class="pt">OPT101: fotodiodo com amplificador de transimpedância integrado, mede a intensidade óptica.</span><span class="en">OPT101: photodiode with built-in transimpedance amplifier, measures the optical intensity.</span></figcaption></figure></div>
+      </div>
+      <figure class="shot"><img src="soi-interface.jpg" alt="Interface do SOI Controller" width="1200" height="806" loading="lazy"><figcaption class="cap"><span class="pt">Interface do SOI Controller (modo simulado): sinal bruto, lock-in digital, varreduras em frequência e potência, espectro.</span><span class="en">SOI Controller interface (simulated mode): raw signal, digital lock-in, frequency and power sweeps, spectrum.</span></figcaption></figure>
+    </div>
+    <div class="feature" id="tmtl2">
+      <div class="prose">
+        <p class="eyebrow"><span class="pt">Software livre · GPL-3</span><span class="en">Free software · GPL-3</span></p>
+        <h3>TMTL2</h3>
+        <p><span class="pt">A UEM tem sido, ao longo dos anos, um centro de desenvolvimento de técnicas fototérmicas, e por isso boa parte da minha produção trata desse tema. Criei o TMTL2 para facilitar o uso desses modelos e a simulação de fenômenos fototérmicos. Dos sete modelos disponíveis, seis foram desenvolvidos na UEM e um, o de Shen, teve a participação de um professor da UEM.</span><span class="en">Over the years UEM has been a centre for the development of photothermal techniques, which is why much of my work deals with this subject. I created TMTL2 to make these models easier to use and to simulate photothermal phenomena. Of the seven models available, six were developed at UEM and one, Shen's, had a UEM professor among its authors.</span></p>
+        <p><span class="pt">Ajuste de transientes de lente térmica (TL) e espelho térmico (TM) resolvidos no tempo, com interface gráfica. Você importa o transiente, escolhe o modelo e os parâmetros fixos e obtém θ, a difusividade térmica e as incertezas.</span><span class="en">Fits time-resolved thermal lens (TL) and thermal mirror (TM) transients through a graphical interface. You import the transient, choose the model and the fixed parameters, and get θ, the thermal diffusivity and their uncertainties.</span></p>
+        <ul class="ticks">
+          <li><span class="pt">Série de transientes: ajusta uma pasta inteira (várias potências) e mostra cada parâmetro em função da potência, com barras de erro.</span><span class="en">Transient series: fits a whole folder (several powers) and plots each parameter against power, with error bars.</span></li>
+          <li><span class="pt">Versão portátil para Windows: não precisa instalar Python nem ter direitos de administrador.</span><span class="en">Portable Windows version: no Python install and no administrator rights needed.</span></li>
+          <li><span class="pt">Exporta resultados em .csv e um relatório do ajuste em .txt.</span><span class="en">Exports results as .csv and a fit report as .txt.</span></li>
+        </ul>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/mbelancon/TMTL/releases" target="_blank" rel="noopener"><span class="pt">Baixar (Releases)</span><span class="en">Download (Releases)</span></a>
+          <a class="btn" href="https://github.com/mbelancon/TMTL" target="_blank" rel="noopener"><span class="pt">Código e manual</span><span class="en">Code and manual</span></a>
+        </div>
+        <p class="cap">pip install git+https://github.com/mbelancon/TMTL</p>
+      </div>
+      <div>
+        <h4 class="nh"><span class="pt">Modelos disponíveis e artigos de referência</span><span class="en">Available models and reference papers</span></h4>
+        <ul class="models">
+          <li><b>TL+TL-Fluid (TLLAM)</b><span><span class="pt">lente térmica da amostra e do fluido, com acoplamento térmico</span><span class="en">sample and fluid thermal lens with heat coupling</span></span><a class="mref" href="https://doi.org/10.1366/10-06096" target="_blank" rel="noopener">Malacarne et al., Appl. Spectrosc. 65, 99 (2011)</a></li>
+          <li><b><span class="pt">TL de Shen</span><span class="en">Shen TL</span></b><span><span class="pt">expressão clássica do modo descasado</span><span class="en">classical mode-mismatched expression</span></span><a class="mref" href="https://doi.org/10.1063/1.356045" target="_blank" rel="noopener">Baesso, Shen &amp; Snook, J. Appl. Phys. 75, 3732 (1994)</a></li>
+          <li><b><span class="pt">TL com fotobranqueamento</span><span class="en">TL with photobleaching</span></b><span><span class="pt">líquidos com reação fotoquímica</span><span class="en">liquids with a photochemical reaction</span></span><a class="mref" href="https://doi.org/10.1021/jp3119296" target="_blank" rel="noopener">Herculano et al., J. Phys. Chem. B 117, 1932 (2013)</a></li>
+          <li><b><span class="pt">TL + lente de população</span><span class="en">TL + population lens</span></b><span><span class="pt">materiais com estado excitado de vida longa</span><span class="en">materials with a long-lived excited state</span></span><a class="mref" href="https://doi.org/10.1063/1.4801838" target="_blank" rel="noopener">Silva et al., Appl. Phys. Lett. 102, 141910 (2013)</a></li>
+          <li><b>TM LAM · TM BAM</b><span><span class="pt">espelho térmico em baixa absorção e pela lei de Beer</span><span class="en">thermal mirror, low absorption and Beer's law</span></span><a class="mref" href="https://doi.org/10.1063/1.2975997" target="_blank" rel="noopener">Sato et al., J. Appl. Phys. 104, 053520 (2008)</a></li>
+          <li><b><span class="pt">TM LAM, amostra finita</span><span class="en">TM LAM, finite sample</span></b><span><span class="pt">espessura finita, faces livres</span><span class="en">finite thickness, free faces</span></span><a class="mref" href="https://doi.org/10.1364/JOSAB.28.001735" target="_blank" rel="noopener">Astrath et al., J. Opt. Soc. Am. B 28, 1735 (2011)</a></li>
+          <li><b>TM+TL-Fluid (HAM)</b><span><span class="pt">amostras opacas com a lente do fluido; on/off e acoplamento completo</span><span class="en">opaque samples with the fluid lens; on/off and full coupling</span></span><span class="mrefs"><a class="mref" href="https://digitalcommons.usu.edu/chem_facpub/557" target="_blank" rel="noopener">Lukasievicz et al., Appl. Spectrosc. 66, 1461 (2012)</a> · <a class="mref" href="https://doi.org/10.1364/OE.386344" target="_blank" rel="noopener">Flizikowski et al., Opt. Express 28, 7116 (2020)</a></span></li>
+        </ul>
       </div>
     </div>
-    <dl class="facts">
-      <div><dt><span class="pt">Instituição</span><span class="en">Institution</span></dt><dd>UTFPR · Pato Branco · DAFIS</dd></div>
-      <div class="fwide"><dt><span class="pt">Fomento</span><span class="en">Funding</span></dt><dd><ul class="flist">
-        <li><span class="pt">Bolsista de Produtividade em Pesquisa do CNPq, nível 2</span><span class="en">CNPq Research Productivity Fellow, level 2</span></li>
-        <li><span class="pt">Coordenador de dois projetos Universal do CNPq</span><span class="en">Principal investigator of two CNPq Universal grants</span></li>
-        <li><span class="pt">Integra a equipe do <a href="#projetos">INPIIF</a>, um INCT do CNPq</span><span class="en">Team member of <a href="#projetos">INPIIF</a>, a CNPq National Institute of Science and Technology (INCT)</span></li>
-        <li><span class="pt">Integra a equipe do <a href="#projetos">Centro Temático em Transição Energética</a> (FINEP) da UTFPR</span><span class="en">Team member of UTFPR's <a href="#projetos">Thematic Centre for Energy Transition</a> (FINEP)</span></li>
-      </ul></dd></div>
-      <div><dt><span class="pt">Prêmios</span><span class="en">Awards</span></dt><dd><ul class="flist">
-        <li><a href="https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/premios/premiados" target="_blank" rel="noopener"><span class="pt">1º lugar, Prêmio José Reis, edição COP30 (2025)</span><span class="en">1st place, José Reis Prize, COP30 edition (2025)</span></a></li>
-        <li><a href="https://www.lestudium-ias.com/fellows/marcos-belancon" target="_blank" rel="noopener"><span class="pt">LE STUDIUM Visiting Researcher Award, Vale do Loire, França (2025)</span><span class="en">LE STUDIUM Visiting Researcher Award, Loire Valley, France (2025)</span></a></li>
-      </ul></dd></div>
-      <div><dt><span class="pt">Colaboração</span><span class="en">Collaboration</span></dt><dd>CEMHTI–CNRS · <a href="https://www.lestudium-ias.com/fellows/marcos-belancon" target="_blank" rel="noopener">LE STUDIUM</a> · UEM</dd></div>
-      <div><dt><span class="pt">Produção</span><span class="en">Output</span></dt><dd><span class="pt">38 artigos em periódicos · 547 citações (Scopus, out/2026)</span><span class="en">38 journal articles · 547 citations (Scopus, Oct 2026)</span></dd></div>
-      <div><dt><span class="pt">Formação de pessoas</span><span class="en">Supervision</span></dt><dd><a href="#orientacoes"><span class="pt">Dissertações de mestrado orientadas e coorientadas na área de química</span><span class="en">MSc dissertations supervised and co-supervised in chemistry</span></a></dd></div>
-    </dl>
-    <details class="story traj" id="trajetoria">
-      <summary>
-        <span class="shead sm"><span class="pt">Trajetória</span><span class="en">Career path</span></span>
-        <span class="sdek"><span class="pt">Formação, pós-doutorados, cargos e prêmios, de 2004 até hoje.</span><span class="en">Education, postdocs, positions and awards, from 2004 to today.</span></span>
-        <span class="smore"><span class="o"><span class="pt">Abrir a linha do tempo</span><span class="en">Open the timeline</span></span><span class="c"><span class="pt">Fechar</span><span class="en">Close</span></span></span>
-      </summary>
-      <div class="sbody">
-    <ul class="time">
-      <li><span class="y">2025–2026</span><div><b><span class="pt">Pós-doutorado na UEM e pesquisador visitante no CEMHTI–CNRS</span><span class="en">Postdoc at UEM and visiting researcher at CEMHTI–CNRS</span></b><span class="d"><span class="pt">UEM: supervisão de Vitor S. Zanuto · CEMHTI: LE STUDIUM Visiting Researcher Award, Orléans, França</span><span class="en">UEM: supervised by Vitor S. Zanuto · CEMHTI: LE STUDIUM Visiting Researcher Award, Orléans, France</span></span></div></li>
-      <li><span class="y">2025</span><div><b><span class="pt">Prêmio José Reis de Divulgação Científica, edição especial COP30</span><span class="en">José Reis Prize for Science Communication, COP30 special edition</span></b><span class="d"><span class="pt">1º lugar (CNPq), com o projeto Lógica Eco · <a href="https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/premios/premiados" target="_blank" rel="noopener">lista de premiados</a></span><span class="en">1st place (CNPq), for the Lógica Eco project · <a href="https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/premios/premiados" target="_blank" rel="noopener">list of winners</a></span></span></div></li>
-      <li><span class="y">2021–2025</span><div><b><span class="pt">Assessor de Pesquisa</span><span class="en">Research Advisor</span></b><span class="d"><span class="pt">Diretoria de Pesquisa e Pós-Graduação, UTFPR Pato Branco</span><span class="en">Research and Graduate Studies Office, UTFPR Pato Branco</span></span></div></li>
-      <li><span class="y">2017–2019</span><div><b><span class="pt">Chefe do Departamento Acadêmico de Física</span><span class="en">Head of the Physics Department</span></b><span class="d">UTFPR Pato Branco</span></div></li>
-      <li><span class="y"><span class="pt">2013–hoje</span><span class="en">2013–now</span></span><div><b><span class="pt">Professor, UTFPR Câmpus Pato Branco</span><span class="en">Professor, UTFPR Pato Branco campus</span></b><span class="d"><span class="pt">DAFIS · pós-graduação na área de química (desde 2014) · linhas: materiais para energia solar, espectroscopia óptica, fenômenos fototérmicos</span><span class="en">DAFIS · graduate programme in chemistry (since 2014) · lines: solar energy materials, optical spectroscopy, photothermal phenomena</span></span></div></li>
-      <li><span class="y">2014–2015</span><div><b><span class="pt">Pós-doutorado, Université Pierre et Marie Curie</span><span class="en">Postdoc, Université Pierre et Marie Curie</span></b><span class="d"><span class="pt">Paris, França · bolsa CNPq</span><span class="en">Paris, France · CNPq fellowship</span></span></div></li>
-      <li><span class="y">2012–2013</span><div><b><span class="pt">Pós-doutorado, UNICAMP (IFGW)</span><span class="en">Postdoc, UNICAMP (IFGW)</span></b><span class="d"><span class="pt">Fibras ópticas fotônicas de sílica e vidros especiais · bolsa FAPESP</span><span class="en">Photonic optical fibres of silica and special glasses · FAPESP fellowship</span></span></div></li>
-      <li><span class="y">2009–2012</span><div><b><span class="pt">Doutorado em Física, UEM</span><span class="en">PhD in Physics, UEM</span></b><span class="d"><span class="pt">Vidros aluminosilicatos de cálcio dopados com Yb³⁺ e Ce³⁺ · orientador L. C. Malacarne · sanduíche em Lyon 1 (Y. Guyot)</span><span class="en">Yb³⁺- and Ce³⁺-doped calcium aluminosilicate glasses · advisor L. C. Malacarne · stay at Lyon 1 (Y. Guyot)</span></span></div></li>
-      <li><span class="y">2008–2009</span><div><b><span class="pt">Mestrado em Física, UEM</span><span class="en">MSc in Physics, UEM</span></b><span class="d"><span class="pt">Técnicas de espelho térmico e lente térmica para materiais semitransparentes e opacos</span><span class="en">Thermal mirror and thermal lens techniques for semitransparent and opaque materials</span></span></div></li>
-      <li><span class="y">2004–2007</span><div><b><span class="pt">Graduação em Física, UEM</span><span class="en">BSc in Physics, UEM</span></b><span class="d"><span class="pt">Efeito magnetocalórico em fases de Heusler</span><span class="en">Magnetocaloric effect in Heusler phases</span></span></div></li>
-    </ul>
+    <div class="two">
+      <div class="card"><h3><span class="pt">Medidor de potência para protótipos de células solares</span><span class="en">Power meter for solar cell prototypes</span></h3>
+        <p><span class="pt">Dispositivo e programa (2020) para acompanhar a potência gerada por minipainéis fotovoltaicos em testes sob luz solar. O sistema foi empregado no estudo que comparou vidros float, borossilicato e teluritos como vidros de cobertura.</span><span class="en">Device and software (2020) to track the power generated by mini photovoltaic panels in tests under sunlight. The system was used in the study that compared float, borosilicate and tellurite glasses as cover glasses.</span></p>
+        <a href="https://github.com/mbelancon/SolarPower" target="_blank" rel="noopener">github.com/mbelancon/SolarPower</a>
+        <a href="https://doi.org/10.1016/j.jpcs.2021.110396" target="_blank" rel="noopener">J. Phys. Chem. Solids 161, 110396 (2022)</a></div>
+      <div class="card"><h3><span class="pt">Medidor de volume de gás</span><span class="en">Gas volume meter</span></h3>
+        <p><span class="pt">Instrumento de bancada para medir, ao longo do tempo, o gás produzido em processos de laboratório, como a geração de biogás.</span><span class="en">Bench instrument for time-resolved measurement of gas produced in laboratory processes such as biogas generation.</span></p>
+        <a href="https://doi.org/10.1016/j.flowmeasinst.2021.102102" target="_blank" rel="noopener">Flow Meas. Instrum. 84, 102102 (2022)</a></div>
+      <div class="card"><h3><span class="pt">Patente com aplicação em biometria neonatal</span><span class="en">Patent with application in neonatal biometrics</span></h3>
+        <p><span class="pt">Dispositivo para obtenção de impressões digitais para aplicações biométricas. Modelo de utilidade BR20202501483, depositado no INPI em 17/07/2025, com M. T. Nakaura, D. Casanova, L. F. P. Southier e M. Teixeira. A patente vem do projeto UTFPR Biometria Neonatal, que estuda a identificação de recém-nascidos por impressões digitais. O grupo também publicou uma revisão sistemática sobre o tema.</span><span class="en">Device for capturing fingerprints for biometric applications. Utility model BR20202501483, filed with INPI (Brazil) on 17 July 2025, with M. T. Nakaura, D. Casanova, L. F. P. Southier and M. Teixeira. The patent comes out of the UTFPR Neonatal Biometrics project, which studies the identification of newborns by their fingerprints. The group also published a systematic review on the subject.</span></p>
+        <a href="https://sites.google.com/view/utfprbiometria/" target="_blank" rel="noopener"><span class="pt">Site do projeto UTFPR Biometria Neonatal</span><span class="en">UTFPR Neonatal Biometrics project website</span></a>
+        <a href="https://doi.org/10.1145/3735551" target="_blank" rel="noopener"><span class="pt">Artigo de revisão: ACM Comput. Surv. 57 (2025)</span><span class="en">Review article: ACM Comput. Surv. 57 (2025)</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section id="divulgacao">
+  <div class="wrap">
+    <h2><span class="pt">Divulgação Científica</span><span class="en">Science Communication</span></h2>
+    <div class="feature" id="logica-eco">
+      <div class="prose">
+        <p class="eyebrow"><span class="pt">Divulgação científica · Prêmio José Reis 2025</span><span class="en">Science communication · José Reis Prize 2025</span></p>
+        <h3>Lógica Eco</h3>
+        <p><span class="pt">Série de vídeos curtos, de cerca de cinco minutos, sobre energia e sustentabilidade: mudanças climáticas, fontes renováveis e energia solar térmica. O projeto de extensão nasceu de uma parceria com a <a href="https://www.ecologicbr.com.br/" target="_blank" rel="noopener">Ecologic</a>, fabricante de aquecedores solares, e recebeu o primeiro lugar no Prêmio José Reis de Divulgação Científica e Tecnológica, edição especial COP30 (CNPq, 2025).</span><span class="en">A series of short videos, about five minutes each, on energy and sustainability: climate change, renewables and solar thermal energy. The outreach project grew out of a partnership with <a href="https://www.ecologicbr.com.br/" target="_blank" rel="noopener">Ecologic</a>, a solar water heater company, and won first place in the José Reis Prize for Science Communication, COP30 special edition (CNPq, 2025).</span></p>
+        <p><span class="pt">Os vídeos foram produzidos pela <a href="https://www.accofilmes.com.br/" target="_blank" rel="noopener">Acco Filmes</a>, de Pato Branco.</span><span class="en">The videos were produced by <a href="https://www.accofilmes.com.br/" target="_blank" rel="noopener">Acco Filmes</a>, based in Pato Branco.</span></p>
+        <div class="cta">
+          <a class="btn" href="https://www.youtube.com/playlist?list=PL_PoCnQXeqNJKAZ7yU-j0yZdTOOKI-I1M" target="_blank" rel="noopener"><span class="pt">Ver a série no YouTube</span><span class="en">See the series on YouTube</span></a>
+          <a class="btn" href="https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/premios/premiados" target="_blank" rel="noopener"><span class="pt">Premiados do Prêmio José Reis (CNPq)</span><span class="en">José Reis Prize winners (CNPq)</span></a>
+          <a class="btn" href="https://www.ecologicbr.com.br/" target="_blank" rel="noopener"><span class="pt">Site da Ecologic</span><span class="en">Ecologic website</span></a>
+          <a class="btn" href="https://www.accofilmes.com.br/" target="_blank" rel="noopener"><span class="pt">Site da Acco Filmes</span><span class="en">Acco Filmes website</span></a>
+        </div>
       </div>
-    </details>
+      <div>
+        <a class="video has-thumb" id="le-video" style="background-image:url(logica-eco.jpg)" href="https://www.youtube.com/playlist?list=PL_PoCnQXeqNJKAZ7yU-j0yZdTOOKI-I1M" target="_blank" rel="noopener" aria-label="Assistir ao primeiro episódio de Lógica Eco">
+          <span class="vtitle">Lógica Eco</span>
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 64 64" width="64" height="64"><circle cx="32" cy="32" r="30" fill="var(--surface)"/><path d="M26 20v24l20-12z" fill="var(--accent)"/></svg></span>
+          <span class="vsub"><span class="pt">Episódio 1 · assistir aqui</span><span class="en">Episode 1 · watch here</span></span>
+        </a>
+      </div>
+    </div>
+    <h3 class="nh talkh"><span class="pt">Palestras e apresentações</span><span class="en">Talks and presentations</span></h3>
+    <div class="card talk" id="palestra">
+      <a class="talkimg" href="https://www.sbpmat.org.br/24encontro/" target="_blank" rel="noopener"><img src="sbpmat-2026.jpg" alt="XXIV B-MRS Meeting, Curitiba, 2026" width="900" height="430" loading="lazy"></a>
+      <div class="talktxt"><span class="tag"><span class="pt">Palestra convidada · 2026</span><span class="en">Invited talk · 2026</span></span>
+      <h3>“Comunicação científica na internet: uma reflexão sobre causas e motivos para o fracasso e o sucesso”</h3>
+      <p><span class="pt">Palestra de abertura do primeiro workshop em comunicação científica do encontro anual da SBPMat (<a href="https://www.sbpmat.org.br/24encontro/" target="_blank" rel="noopener">XXIV B-MRS Meeting</a>, Curitiba, 27 de setembro a 1º de outubro de 2026), como palestrante convidado.</span><span class="en">Opening talk of the first workshop on science communication at the annual meeting of SBPMat, the Brazilian Materials Research Society (<a href="https://www.sbpmat.org.br/24encontro/" target="_blank" rel="noopener">XXIV B-MRS Meeting</a>, Curitiba, 27 September to 1 October 2026), as invited speaker. Title in English: “Science communication on the internet: a reflection on the causes and reasons for failure and success”.</span></p>
+      </div>
+    </div>
+    <div class="card talk" id="lyon2026">
+      <a class="talkimg" href="https://glass-lyon2026.sciencesconf.org/" target="_blank" rel="noopener"><img src="glass-lyon-2026.jpg" alt="GLASS LYON 2026, Lyon, 13–17 April 2026" width="695" height="298" loading="lazy"></a>
+      <div class="talktxt"><span class="tag"><span class="pt">Apresentação oral · 2026</span><span class="en">Oral presentation · 2026</span></span>
+      <h3>“The reuse of the cover glass to enhance solar energy sustainability in the Brazilian context”</h3>
+      <p><span class="pt">Apresentação oral no simpósio Glass, a Sustainable Material do <a href="https://glass-lyon2026.sciencesconf.org/" target="_blank" rel="noopener">GLASS LYON 2026</a>, encontro anual da International Commission on Glass realizado junto com a 18ª conferência da ESG, em Lyon, França, de 13 a 17 de abril de 2026.</span><span class="en">Oral presentation in the symposium Glass, a Sustainable Material at <a href="https://glass-lyon2026.sciencesconf.org/" target="_blank" rel="noopener">GLASS LYON 2026</a>, the International Commission on Glass annual meeting held jointly with the 18th ESG conference, in Lyon, France, 13–17 April 2026.</span></p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -628,249 +817,6 @@ Perda = \(16 / 1600 = 0{,}01 = 99\%\)</p>
   </div>
 </section>
 
-<section id="pesquisa">
-  <div class="wrap">
-    <h2><span class="pt">Pesquisa</span><span class="en">Research</span></h2>
-    <nav class="subnav" aria-label="Pesquisa">
-      <a href="#linhas"><span class="pt">Linhas</span><span class="en">Themes</span></a>
-      <a href="#projetos"><span class="pt">Projetos</span><span class="en">Projects</span></a>
-      <a href="#rede"><span class="pt">Rede de coautores</span><span class="en">Co-authors</span></a>
-      <a href="#publicacoes"><span class="pt">Publicações</span><span class="en">Publications</span></a>
-      <a href="#orientacoes"><span class="pt">Orientações</span><span class="en">Supervision</span></a>
-    </nav>
-    <h3 class="subh" id="linhas"><span class="pt">Linhas de pesquisa</span><span class="en">Research themes</span></h3>
-    <p class="sub"><span class="pt">Cinco frentes que se alimentam: os métodos fototérmicos medem os materiais, os materiais viram dispositivos, e os dispositivos respondem a perguntas sobre energia.</span><span class="en">Five connected fronts: photothermal methods measure the materials, materials become devices, and devices answer questions about energy.</span></p>
-    <div class="themes">
-      <div class="theme"><span class="tag">01 · TL / TM</span>
-        <h3><span class="pt">Espectroscopia fototérmica</span><span class="en">Photothermal spectroscopy</span></h3>
-        <p><span class="pt">Lente térmica e espelho térmico resolvidos no tempo: modelos, efeito do acoplamento térmico com o fluido, ondas de pressão em nanossegundos.</span><span class="en">Time-resolved thermal lens and thermal mirror: models, sample–fluid heat coupling, nanosecond pressure waves.</span></p>
-        <a href="#g-P" data-jump="P"><span class="pt">Ver trabalhos →</span><span class="en">See papers →</span></a></div>
-      <div class="theme"><span class="tag">02 · RE<sup>3+</sup></span>
-        <h3><span class="pt">Vidros e materiais luminescentes</span><span class="en">Glasses and luminescent materials</span></h3>
-        <p><span class="pt">Teluritos, aluminosilicatos e cerâmicas dopados com terras-raras para lasers, amplificadores ópticos, fibras e iluminação.</span><span class="en">Rare-earth doped tellurites, aluminosilicates and ceramics for lasers, optical amplifiers, fibres and lighting.</span></p>
-        <a href="#g-G" data-jump="G"><span class="pt">Ver trabalhos →</span><span class="en">See papers →</span></a></div>
-      <div class="theme"><span class="tag">03 · c-Si</span>
-        <h3><span class="pt">Vidro para energia solar</span><span class="en">Glass for solar energy</span></h3>
-        <p><span class="pt">Vidros de cobertura, conversão espectral, filtros UV e reaproveitamento do vidro de painéis fotovoltaicos em fim de vida.</span><span class="en">Cover glasses, spectral conversion, UV filters and upcycling of glass from end-of-life photovoltaic panels.</span></p>
-        <a href="#g-S" data-jump="S"><span class="pt">Ver trabalhos →</span><span class="en">See papers →</span></a></div>
-      <div class="theme"><span class="tag">04 · GW · sala de aula</span>
-        <h3><span class="pt">Energia, sociedade e ensino</span><span class="en">Energy, society and teaching</span></h3>
-        <p><span class="pt">Cenários para o sistema elétrico brasileiro, transição energética e hidrogênio verde, e o ensino de física ligado à tecnologia.</span><span class="en">Scenarios for the Brazilian power system, energy transition and green hydrogen, and physics teaching tied to technology.</span></p>
-        <a href="#g-E" data-jump="E"><span class="pt">Ver trabalhos →</span><span class="en">See papers →</span></a></div>
-      <div class="theme"><span class="tag">05 · STM32 · LIBS</span>
-        <h3><span class="pt">Instrumentação e colaborações</span><span class="en">Instrumentation and collaborations</span></h3>
-        <p><span class="pt">Técnicas científicas montadas sobre microcontroladores, instrumentos de bancada, espectroscopia com quimiometria e parcerias em biometria e redes ópticas.</span><span class="en">Scientific techniques built on microcontrollers, bench instruments, spectroscopy with chemometrics, and partnerships in biometrics and optical networks.</span></p>
-        <a href="#ferramentas"><span class="pt">Ver instrumentos →</span><span class="en">See instruments →</span></a></div>
-    </div>
-  </div>
-</section>
-
-<section id="projetos" class="subsec">
-  <div class="wrap">
-    <h3 class="subh"><span class="pt">Projetos e redes de pesquisa</span><span class="en">Projects and research networks</span></h3>
-    <p class="sub"><span class="pt">Projetos de que participo ou participei, como membro da equipe ou colaborador.</span><span class="en">Projects I take or took part in, as a team member or collaborator.</span></p>
-    <div class="two pj">
-      <div class="card"><span class="tag">FINEP · UTFPR Pato Branco</span>
-        <h3>REH2V-FV</h3>
-        <p><span class="pt">Reator Eletrocatalítico Fotovoltaico com Conversores Autônomos de Energia para a Geração de Hidrogênio Verde. O projeto implanta o Centro Temático de Transição Energética da UTFPR, um centro multidisciplinar de desenvolvimento de tecnologias para a transição energética, com R$ 13,1 milhões da Finep. Reúne docentes de Física, Química e de várias engenharias. Integro a equipe do centro.</span><span class="en">Photovoltaic Electrocatalytic Reactor with Autonomous Energy Converters for Green Hydrogen Generation. The project sets up the UTFPR Thematic Centre for Energy Transition, a multidisciplinary centre developing technologies for the energy transition, with R$ 13.1 million from Finep. It brings together faculty from Physics, Chemistry and several engineering fields. I am a member of the centre's team.</span></p>
-        <a href="https://www.utfpr.edu.br/noticias/geral/divulgacao-cientifica/utfpr-recebe-r-13-1-mi-para-implantar-o-1o-centro-de-transicao-energetica-do-parana" target="_blank" rel="noopener"><span class="pt">Notícia da UTFPR</span><span class="en">UTFPR news story</span></a></div>
-      <div class="card"><span class="tag"><span class="pt">INCT do CNPq · sede na UEM</span><span class="en">CNPq INCT · hosted at UEM</span></span>
-        <h3>INPIIF</h3>
-        <p><span class="pt">Instituto Nacional de Pesquisa e Inovação em Imagem Fototérmica. Rede de cooperação para desenvolver métodos de imagem optoacústica, fotoacústica e fototérmica no infravermelho médio, com aplicações em diagnóstico e acompanhamento de terapias. Reúne 18 instituições brasileiras, entre elas a UTFPR, e 18 do exterior. Integro a equipe do instituto.</span><span class="en">National Institute for Research and Innovation in Photothermal Imaging. A cooperative network developing mid-infrared optoacoustic, photoacoustic and photothermal imaging methods, with applications in diagnosis and therapy monitoring. It brings together 18 Brazilian institutions, UTFPR among them, and 18 from abroad. I am a member of the institute's team.</span></p>
-        <a href="https://inpiif.uem.br/" target="_blank" rel="noopener">inpiif.uem.br</a></div>
-      <div class="card"><span class="tag">LE STUDIUM · CEMHTI–CNRS · 2025–2026</span>
-        <h3><span class="pt">Vitrocerâmicas a partir de vidro solar</span><span class="en">Glass-ceramics from solar glass</span></h3>
-        <p><span class="pt">Pesquisador visitante no laboratório CEMHTI (CNRS, Orléans), com o LE STUDIUM Visiting Researcher Award, no projeto de reaproveitamento do vidro de cobertura de painéis em fim de vida para produzir vitrocerâmicas.</span><span class="en">Visiting researcher at the CEMHTI laboratory (CNRS, Orléans), with the LE STUDIUM Visiting Researcher Award, on the project to reuse cover glass from end-of-life panels to produce glass-ceramics.</span></p>
-        <a href="https://www.lestudium-ias.com/fellows/marcos-belancon" target="_blank" rel="noopener"><span class="pt">Página de fellow no LE STUDIUM</span><span class="en">Fellow page at LE STUDIUM</span></a></div>
-      <div class="card"><span class="tag"><span class="pt">CNPq · desde 2023</span><span class="en">CNPq · since 2023</span></span>
-        <h3><span class="pt">Reciclagem de vidros de painéis fotovoltaicos</span><span class="en">Recycling of photovoltaic panel glass</span></h3>
-        <p><span class="pt">Rotas para dar um segundo uso ao vidro de painéis em fim de vida: recuperação da chapa inteira, novos vidros oxifluoretos e conversores espectrais.</span><span class="en">Routes to give end-of-life panel glass a second use: whole-sheet recovery, new oxyfluoride glasses and spectral converters.</span></p>
-        <a href="#g-S" data-jump="S"><span class="pt">Ver os artigos →</span><span class="en">See the papers →</span></a></div>
-    </div>
-  </div>
-</section>
-
-<section id="rede" class="subsec">
-  <div class="wrap">
-    <h3 class="subh"><span class="pt">Rede de coautores</span><span class="en">Co-author network</span></h3>
-    <p class="sub"><span class="pt">A bolha central sou eu; cada uma das outras é um coautor, com área proporcional ao número de artigos que publicamos juntos. Quanto mais artigos comigo, mais perto do centro; ao redor, ficam lado a lado os coautores que costumam assinar os mesmos trabalhos. As linhas ligam quem tem dois ou mais artigos em comum. Toque em uma bolha para destacar e listar os parceiros dela.</span><span class="en">The central bubble is me; each of the others is a co-author, with area proportional to the number of articles we published together. The more articles with me, the closer to the centre; around the circle, co-authors who usually sign the same papers sit side by side. Lines join people with two or more articles in common. Tap a bubble to highlight and list its partners.</span></p>
-    <figure class="mapfig"><div class="mapscroll"><svg id="net-b" role="img" aria-label="Diagrama de bolhas da rede de coautores"></svg></div>
-      <div class="legend">
-        <span><i class="dot" style="background:var(--s-utf)"></i>UTFPR</span>
-        <span><i class="dot" style="background:var(--s-uem)"></i>UEM</span>
-        <span><i class="dot" style="background:var(--s-br)"></i><span class="pt">Outras instituições no Brasil</span><span class="en">Other institutions in Brazil</span></span>
-        <span><i class="dot" style="background:var(--s-ext)"></i><span class="pt">Exterior</span><span class="en">Abroad</span></span>
-        <span><span class="pt">Número ao lado do nome: artigos em coautoria comigo</span><span class="en">Number next to each name: articles co-authored with me</span></span>
-      </div>
-    </figure>
-    <h3 class="nh" id="pl-h" aria-live="polite"></h3>
-    <ul class="rank" id="pl-c"></ul>
-    <p class="cap"><span class="pt">Contagem sobre os 38 artigos em periódicos do Lattes; a rede reúne os coautores com dois ou mais artigos em comum.</span><span class="en">Counted over the 38 journal articles in the Lattes CV; the network gathers co-authors with two or more articles in common.</span></p>
-  </div>
-</section>
-
-<section id="publicacoes" class="subsec">
-  <div class="wrap">
-    <h3 class="subh"><span class="pt">Publicações por tema</span><span class="en">Publications by theme</span></h3>
-    <p class="sub"><span class="pt">Artigos em periódicos, capítulo, trabalhos em conferências e preprints, cada um com um resumo de uma linha.</span><span class="en">Journal articles, a book chapter, conference papers and preprints, each with a one-line summary.</span></p>
-    <div class="chips" id="chips" role="group" aria-label="Filtrar por tema"></div>
-    <div id="pub-root"></div>
-  </div>
-</section>
-
-<section id="orientacoes" class="subsec">
-  <div class="wrap">
-    <h3 class="subh"><span class="pt">Dissertações de mestrado orientadas e coorientadas</span><span class="en">MSc dissertations supervised and co-supervised</span></h3>
-    <p class="sub"><span class="pt">Orientei e coorientei dissertações de mestrado na área de química, em um <a href="https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgtp-pb" target="_blank" rel="noopener">programa de pós-graduação</a> da UTFPR Pato Branco. Os textos completos estão no <a href="https://repositorio.utfpr.edu.br/jspui/simple-search?location=1%2F11&amp;query=belan%C3%A7on&amp;rpp=10&amp;sort_by=score&amp;order=desc" target="_blank" rel="noopener">repositório institucional</a>.</span><span class="en">I have supervised and co-supervised MSc dissertations in chemistry, in a <a href="https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgtp-pb" target="_blank" rel="noopener">graduate programme</a> at UTFPR Pato Branco. Full texts are in the <a href="https://repositorio.utfpr.edu.br/jspui/simple-search?location=1%2F11&amp;query=belan%C3%A7on&amp;rpp=10&amp;sort_by=score&amp;order=desc" target="_blank" rel="noopener">institutional repository</a>.</span></p>
-    <ul class="time diss"><li><span class="y">2026</span><div><b>Emissão vermelha intensa do complexo β-dicetonato de Eu(III) em material híbrido sílica-orgânico: síntese e propriedades espectroscópicas</b><span class="d">Anaxagora Rodolfo Luft</span></div></li><li><span class="y">2025</span><div><b>Reutilização de vidros de cobertura de painéis fotovoltaicos para produção de silicatos com baixa temperatura de fusão</b><span class="d">Rafaela Valcarenghi</span></div></li><li><span class="y">2023</span><div><b>Síntese e caracterização de xerogéis sílica/orgânico dopados com cério visando a aplicação como filtro UV para painéis fotovoltaicos</b><span class="d">Jefferson Cristiano Gemelli</span></div></li><li><span class="y">2021</span><div><b>Ciclo de vida de painéis fotovoltaicos: recuperação do vidro como alternativa ao descarte</b><span class="d">Francisnara Tonholi</span></div></li><li><span class="y">2019</span><div><b>Incorporação de óxido de cério em vidros teluritos para o desenvolvimento de dispositivos ópticos</b><span class="d">Edenilson da Silva</span></div></li><li><span class="y">2018</span><div><b>Incorporação de nanopartículas de prata em vidros teluritos dopados com Pr3+</b><span class="d">Maiara Mitiko Taniguchi</span></div></li></ul>
-  </div>
-</section>
-
-<section id="ferramentas">
-  <div class="wrap">
-    <h2><span class="pt">Instrumentação científica aberta</span><span class="en">Open scientific instrumentation</span></h2>
-    <p class="sub"><span class="pt">Tenho trabalhado cada vez mais com microcontroladores e com a montagem de técnicas científicas sobre eles: hardware de baixo custo, firmware e software abertos, para que qualquer laboratório possa reproduzir as medidas.</span><span class="en">More and more of my work is on microcontrollers and on building scientific techniques on top of them: low-cost hardware with open firmware and software, so that any lab can reproduce the measurements.</span></p>
-    <div class="feature" id="soi">
-      <div class="prose">
-        <p class="eyebrow"><span class="pt">Instrumento aberto · STM32</span><span class="en">Open instrument · STM32</span></p>
-        <h3>SOI</h3>
-        <p><span class="pt">Um microcontrolador STM32 (Black Pill) modula um laser de diodo e adquire, ao mesmo tempo, o sinal óptico de um fotodiodo OPT101 e o sinal acústico de um microfone MEMS INMP441. A demodulação lock-in é digital, feita no computador pela interface em Python.</span><span class="en">An STM32 microcontroller (Black Pill) modulates a diode laser and acquires, at the same time, the optical signal from an OPT101 photodiode and the acoustic signal from an INMP441 MEMS microphone. Lock-in demodulation is digital, done on the computer by the Python interface.</span></p>
-        <p><span class="pt">Com a mesma placa o equipamento é capaz de fazer fotoacústica, lente térmica ou espelho térmico, efeito miragem, z-scan e medidas de luminescência resolvida no tempo, usando lasers de diodo acessíveis e sem amplificador lock-in ou chopper caros. O resultado é um sistema miniaturizado e portátil.</span><span class="en">With the same board the instrument can perform photoacoustics, thermal lens or thermal mirror, mirage effect, z-scan and time-resolved luminescence measurements, using affordable diode lasers and without an expensive lock-in amplifier or chopper. The result is a miniaturised, portable system.</span></p>
-        <ul class="tech" aria-label="Técnicas">
-          <li><span class="pt">Fotoacústica</span><span class="en">Photoacoustics</span></li>
-          <li><span class="pt">Lente térmica</span><span class="en">Thermal lens</span></li>
-          <li><span class="pt">Espelho térmico</span><span class="en">Thermal mirror</span></li>
-          <li><span class="pt">Efeito miragem</span><span class="en">Mirage effect</span></li>
-          <li>Z-scan</li>
-          <li><span class="pt">Luminescência resolvida no tempo</span><span class="en">Time-resolved luminescence</span></li>
-        </ul>
-        <div class="cta">
-          <a class="btn primary" href="https://github.com/mbelancon/SOI/releases/latest" target="_blank" rel="noopener"><span class="pt">Baixar a interface</span><span class="en">Download the interface</span></a>
-          <a class="btn" href="https://github.com/mbelancon/SOI" target="_blank" rel="noopener"><span class="pt">Firmware, ligações e manual</span><span class="en">Firmware, wiring and manual</span></a>
-        </div>
-      </div>
-      <div class="hw">
-        <figure class="hwfig"><svg viewBox="0 0 430 140" role="img" aria-label="Black Pill STM32F401">
-<rect x="22" y="4" width="390" height="132" rx="8" class="pcb"/>
-<circle cx="38.0" cy="16" r="4.2" class="pad"/><circle cx="56.2" cy="16" r="4.2" class="pad"/><circle cx="74.4" cy="16" r="4.2" class="pad"/><circle cx="92.6" cy="16" r="4.2" class="pad"/><circle cx="110.8" cy="16" r="4.2" class="pad"/><circle cx="129.0" cy="16" r="4.2" class="pad"/><circle cx="147.2" cy="16" r="4.2" class="pad"/><circle cx="165.4" cy="16" r="4.2" class="pad"/><circle cx="183.6" cy="16" r="4.2" class="pad"/><circle cx="201.8" cy="16" r="4.2" class="pad"/><circle cx="220.0" cy="16" r="4.2" class="pad"/><circle cx="238.2" cy="16" r="4.2" class="pad"/><circle cx="256.4" cy="16" r="4.2" class="pad"/><circle cx="274.6" cy="16" r="4.2" class="pad"/><circle cx="292.8" cy="16" r="4.2" class="pad"/><circle cx="311.0" cy="16" r="4.2" class="pad"/><circle cx="329.2" cy="16" r="4.2" class="pad"/><circle cx="347.4" cy="16" r="4.2" class="pad"/><circle cx="365.6" cy="16" r="4.2" class="pad"/><circle cx="383.8" cy="16" r="4.2" class="pad"/><circle cx="38.0" cy="124" r="4.2" class="pad"/><circle cx="56.2" cy="124" r="4.2" class="pad"/><circle cx="74.4" cy="124" r="4.2" class="pad"/><circle cx="92.6" cy="124" r="4.2" class="pad"/><circle cx="110.8" cy="124" r="4.2" class="pad"/><circle cx="129.0" cy="124" r="4.2" class="pad"/><circle cx="147.2" cy="124" r="4.2" class="pad"/><circle cx="165.4" cy="124" r="4.2" class="pad"/><circle cx="183.6" cy="124" r="4.2" class="pad"/><circle cx="201.8" cy="124" r="4.2" class="pad"/><circle cx="220.0" cy="124" r="4.2" class="pad"/><circle cx="238.2" cy="124" r="4.2" class="pad"/><circle cx="256.4" cy="124" r="4.2" class="pad"/><circle cx="274.6" cy="124" r="4.2" class="pad"/><circle cx="292.8" cy="124" r="4.2" class="pad"/><circle cx="311.0" cy="124" r="4.2" class="pad"/><circle cx="329.2" cy="124" r="4.2" class="pad"/><circle cx="347.4" cy="124" r="4.2" class="pad"/><circle cx="365.6" cy="124" r="4.2" class="pad"/><circle cx="383.8" cy="124" r="4.2" class="pad"/>
-<rect x="2" y="48" width="44" height="44" rx="6" class="metal"/><rect x="8" y="56" width="26" height="28" rx="4" class="pcb2"/>
-<g transform="translate(232 70) rotate(45)"><rect x="-27" y="-27" width="54" height="54" rx="3" class="chip"/><circle cx="-19" cy="-19" r="2.5" class="pad"/></g>
-<text x="232" y="74" text-anchor="middle" class="silk">STM32</text>
-<rect x="78" y="42" width="22" height="16" rx="3" class="metal"/><circle cx="89" cy="50" r="4.5" class="chip"/>
-<rect x="78" y="82" width="22" height="16" rx="3" class="metal"/><circle cx="89" cy="90" r="4.5" class="chip"/>
-<rect x="124" y="56" width="34" height="14" rx="6" class="metal"/>
-<rect x="318" y="50" width="26" height="40" rx="2" class="chip"/>
-<rect x="366" y="44" width="12" height="52" rx="2" class="pcb2"/><circle cx="372" cy="52" r="3.4" class="pad"/><circle cx="372" cy="64" r="3.4" class="pad"/><circle cx="372" cy="76" r="3.4" class="pad"/><circle cx="372" cy="88" r="3.4" class="pad"/>
-<rect x="170" y="100" width="10" height="6" class="led"/>
-<text x="62" y="38" class="silk">NRST</text><text x="62" y="110" class="silk">BOOT0</text><text x="352" y="38" class="silk">SWD</text>
-</svg><figcaption class="cap"><span class="pt">Black Pill STM32F401: gera a modulação do laser e faz a aquisição (ADC e I2S), ligada ao computador por USB-C.</span><span class="en">Black Pill STM32F401: generates the laser modulation and handles acquisition (ADC and I2S), connected to the computer over USB-C.</span></figcaption></figure>
-        <div class="pair"><figure class="hwfig small"><svg viewBox="0 0 150 150" role="img" aria-label="Microfone MEMS INMP441">
-<circle cx="75" cy="75" r="70" class="pcb"/>
-<rect x="52" y="48" width="46" height="34" rx="3" class="metal"/><circle cx="64" cy="58" r="3.2" class="hole"/>
-<circle cx="38" cy="24" r="6" class="pad"/><circle cx="75" cy="24" r="6" class="pad"/><circle cx="112" cy="24" r="6" class="pad"/>
-<circle cx="38" cy="126" r="6" class="pad"/><circle cx="75" cy="126" r="6" class="pad"/><circle cx="112" cy="126" r="6" class="pad"/>
-<text x="38" y="42" text-anchor="middle" class="silk">SD</text><text x="75" y="42" text-anchor="middle" class="silk">VDD</text><text x="112" y="42" text-anchor="middle" class="silk">GND</text>
-<text x="38" y="114" text-anchor="middle" class="silk">L/R</text><text x="75" y="114" text-anchor="middle" class="silk">WS</text><text x="112" y="114" text-anchor="middle" class="silk">SCK</text>
-<text x="75" y="98" text-anchor="middle" class="silk">INMP441</text>
-</svg><figcaption class="cap"><span class="pt">INMP441: microfone MEMS digital (I2S, 24 bits) que capta o sinal fotoacústico.</span><span class="en">INMP441: digital MEMS microphone (I2S, 24 bit) that picks up the photoacoustic signal.</span></figcaption></figure><figure class="hwfig small"><svg viewBox="0 0 150 150" role="img" aria-label="Fotodiodo OPT101">
-<g class="leg"><rect x="28" y="14" width="13" height="26" rx="2" class="metal"/><rect x="28" y="110" width="13" height="26" rx="2" class="metal"/><rect x="55" y="14" width="13" height="26" rx="2" class="metal"/><rect x="55" y="110" width="13" height="26" rx="2" class="metal"/><rect x="82" y="14" width="13" height="26" rx="2" class="metal"/><rect x="82" y="110" width="13" height="26" rx="2" class="metal"/><rect x="109" y="14" width="13" height="26" rx="2" class="metal"/><rect x="109" y="110" width="13" height="26" rx="2" class="metal"/></g>
-<rect x="16" y="34" width="118" height="82" rx="6" class="clear"/>
-<rect x="56" y="56" width="38" height="38" class="pd"/><rect x="60" y="60" width="30" height="30" class="pd2"/>
-<path d="M56 75H34M94 75h22M75 56V44M75 94v12" class="bond"/>
-<circle cx="28" cy="104" r="4" class="pcb2"/>
-<text x="75" y="130" text-anchor="middle" class="silk2">OPT101</text>
-</svg><figcaption class="cap"><span class="pt">OPT101: fotodiodo com amplificador de transimpedância integrado, mede a intensidade óptica.</span><span class="en">OPT101: photodiode with built-in transimpedance amplifier, measures the optical intensity.</span></figcaption></figure></div>
-      </div>
-      <figure class="shot"><img src="soi-interface.jpg" alt="Interface do SOI Controller" width="1200" height="806" loading="lazy"><figcaption class="cap"><span class="pt">Interface do SOI Controller (modo simulado): sinal bruto, lock-in digital, varreduras em frequência e potência, espectro.</span><span class="en">SOI Controller interface (simulated mode): raw signal, digital lock-in, frequency and power sweeps, spectrum.</span></figcaption></figure>
-    </div>
-    <div class="feature" id="tmtl2">
-      <div class="prose">
-        <p class="eyebrow"><span class="pt">Software livre · GPL-3</span><span class="en">Free software · GPL-3</span></p>
-        <h3>TMTL2</h3>
-        <p><span class="pt">A UEM tem sido, ao longo dos anos, um centro de desenvolvimento de técnicas fototérmicas, e por isso boa parte da minha produção trata desse tema. Criei o TMTL2 para facilitar o uso desses modelos e a simulação de fenômenos fototérmicos. Dos sete modelos disponíveis, seis foram desenvolvidos na UEM e um, o de Shen, teve a participação de um professor da UEM.</span><span class="en">Over the years UEM has been a centre for the development of photothermal techniques, which is why much of my work deals with this subject. I created TMTL2 to make these models easier to use and to simulate photothermal phenomena. Of the seven models available, six were developed at UEM and one, Shen's, had a UEM professor among its authors.</span></p>
-        <p><span class="pt">Ajuste de transientes de lente térmica (TL) e espelho térmico (TM) resolvidos no tempo, com interface gráfica. Você importa o transiente, escolhe o modelo e os parâmetros fixos e obtém θ, a difusividade térmica e as incertezas.</span><span class="en">Fits time-resolved thermal lens (TL) and thermal mirror (TM) transients through a graphical interface. You import the transient, choose the model and the fixed parameters, and get θ, the thermal diffusivity and their uncertainties.</span></p>
-        <ul class="ticks">
-          <li><span class="pt">Série de transientes: ajusta uma pasta inteira (várias potências) e mostra cada parâmetro em função da potência, com barras de erro.</span><span class="en">Transient series: fits a whole folder (several powers) and plots each parameter against power, with error bars.</span></li>
-          <li><span class="pt">Versão portátil para Windows: não precisa instalar Python nem ter direitos de administrador.</span><span class="en">Portable Windows version: no Python install and no administrator rights needed.</span></li>
-          <li><span class="pt">Exporta resultados em .csv e um relatório do ajuste em .txt.</span><span class="en">Exports results as .csv and a fit report as .txt.</span></li>
-        </ul>
-        <div class="cta">
-          <a class="btn primary" href="https://github.com/mbelancon/TMTL/releases" target="_blank" rel="noopener"><span class="pt">Baixar (Releases)</span><span class="en">Download (Releases)</span></a>
-          <a class="btn" href="https://github.com/mbelancon/TMTL" target="_blank" rel="noopener"><span class="pt">Código e manual</span><span class="en">Code and manual</span></a>
-        </div>
-        <p class="cap">pip install git+https://github.com/mbelancon/TMTL</p>
-      </div>
-      <div>
-        <h4 class="nh"><span class="pt">Modelos disponíveis e artigos de referência</span><span class="en">Available models and reference papers</span></h4>
-        <ul class="models">
-          <li><b>TL+TL-Fluid (TLLAM)</b><span><span class="pt">lente térmica da amostra e do fluido, com acoplamento térmico</span><span class="en">sample and fluid thermal lens with heat coupling</span></span><a class="mref" href="https://doi.org/10.1366/10-06096" target="_blank" rel="noopener">Malacarne et al., Appl. Spectrosc. 65, 99 (2011)</a></li>
-          <li><b><span class="pt">TL de Shen</span><span class="en">Shen TL</span></b><span><span class="pt">expressão clássica do modo descasado</span><span class="en">classical mode-mismatched expression</span></span><a class="mref" href="https://doi.org/10.1063/1.356045" target="_blank" rel="noopener">Baesso, Shen &amp; Snook, J. Appl. Phys. 75, 3732 (1994)</a></li>
-          <li><b><span class="pt">TL com fotobranqueamento</span><span class="en">TL with photobleaching</span></b><span><span class="pt">líquidos com reação fotoquímica</span><span class="en">liquids with a photochemical reaction</span></span><a class="mref" href="https://doi.org/10.1021/jp3119296" target="_blank" rel="noopener">Herculano et al., J. Phys. Chem. B 117, 1932 (2013)</a></li>
-          <li><b><span class="pt">TL + lente de população</span><span class="en">TL + population lens</span></b><span><span class="pt">materiais com estado excitado de vida longa</span><span class="en">materials with a long-lived excited state</span></span><a class="mref" href="https://doi.org/10.1063/1.4801838" target="_blank" rel="noopener">Silva et al., Appl. Phys. Lett. 102, 141910 (2013)</a></li>
-          <li><b>TM LAM · TM BAM</b><span><span class="pt">espelho térmico em baixa absorção e pela lei de Beer</span><span class="en">thermal mirror, low absorption and Beer's law</span></span><a class="mref" href="https://doi.org/10.1063/1.2975997" target="_blank" rel="noopener">Sato et al., J. Appl. Phys. 104, 053520 (2008)</a></li>
-          <li><b><span class="pt">TM LAM, amostra finita</span><span class="en">TM LAM, finite sample</span></b><span><span class="pt">espessura finita, faces livres</span><span class="en">finite thickness, free faces</span></span><a class="mref" href="https://doi.org/10.1364/JOSAB.28.001735" target="_blank" rel="noopener">Astrath et al., J. Opt. Soc. Am. B 28, 1735 (2011)</a></li>
-          <li><b>TM+TL-Fluid (HAM)</b><span><span class="pt">amostras opacas com a lente do fluido; on/off e acoplamento completo</span><span class="en">opaque samples with the fluid lens; on/off and full coupling</span></span><span class="mrefs"><a class="mref" href="https://digitalcommons.usu.edu/chem_facpub/557" target="_blank" rel="noopener">Lukasievicz et al., Appl. Spectrosc. 66, 1461 (2012)</a> · <a class="mref" href="https://doi.org/10.1364/OE.386344" target="_blank" rel="noopener">Flizikowski et al., Opt. Express 28, 7116 (2020)</a></span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="two">
-      <div class="card"><h3><span class="pt">Medidor de potência para protótipos de células solares</span><span class="en">Power meter for solar cell prototypes</span></h3>
-        <p><span class="pt">Dispositivo e programa (2020) para acompanhar a potência gerada por minipainéis fotovoltaicos em testes sob luz solar. O sistema foi empregado no estudo que comparou vidros float, borossilicato e teluritos como vidros de cobertura.</span><span class="en">Device and software (2020) to track the power generated by mini photovoltaic panels in tests under sunlight. The system was used in the study that compared float, borosilicate and tellurite glasses as cover glasses.</span></p>
-        <a href="https://github.com/mbelancon/SolarPower" target="_blank" rel="noopener">github.com/mbelancon/SolarPower</a>
-        <a href="https://doi.org/10.1016/j.jpcs.2021.110396" target="_blank" rel="noopener">J. Phys. Chem. Solids 161, 110396 (2022)</a></div>
-      <div class="card"><h3><span class="pt">Medidor de volume de gás</span><span class="en">Gas volume meter</span></h3>
-        <p><span class="pt">Instrumento de bancada para medir, ao longo do tempo, o gás produzido em processos de laboratório, como a geração de biogás.</span><span class="en">Bench instrument for time-resolved measurement of gas produced in laboratory processes such as biogas generation.</span></p>
-        <a href="https://doi.org/10.1016/j.flowmeasinst.2021.102102" target="_blank" rel="noopener">Flow Meas. Instrum. 84, 102102 (2022)</a></div>
-      <div class="card"><h3><span class="pt">Patente com aplicação em biometria neonatal</span><span class="en">Patent with application in neonatal biometrics</span></h3>
-        <p><span class="pt">Dispositivo para obtenção de impressões digitais para aplicações biométricas. Modelo de utilidade BR20202501483, depositado no INPI em 17/07/2025, com M. T. Nakaura, D. Casanova, L. F. P. Southier e M. Teixeira. A patente vem do projeto UTFPR Biometria Neonatal, que estuda a identificação de recém-nascidos por impressões digitais. O grupo também publicou uma revisão sistemática sobre o tema.</span><span class="en">Device for capturing fingerprints for biometric applications. Utility model BR20202501483, filed with INPI (Brazil) on 17 July 2025, with M. T. Nakaura, D. Casanova, L. F. P. Southier and M. Teixeira. The patent comes out of the UTFPR Neonatal Biometrics project, which studies the identification of newborns by their fingerprints. The group also published a systematic review on the subject.</span></p>
-        <a href="https://sites.google.com/view/utfprbiometria/" target="_blank" rel="noopener"><span class="pt">Site do projeto UTFPR Biometria Neonatal</span><span class="en">UTFPR Neonatal Biometrics project website</span></a>
-        <a href="https://doi.org/10.1145/3735551" target="_blank" rel="noopener"><span class="pt">Artigo de revisão: ACM Comput. Surv. 57 (2025)</span><span class="en">Review article: ACM Comput. Surv. 57 (2025)</span></a></div>
-    </div>
-  </div>
-</section>
-
-<section id="divulgacao">
-  <div class="wrap">
-    <h2><span class="pt">Divulgação científica</span><span class="en">Science communication</span></h2>
-    <div class="feature" id="logica-eco">
-      <div class="prose">
-        <p class="eyebrow"><span class="pt">Divulgação científica · Prêmio José Reis 2025</span><span class="en">Science communication · José Reis Prize 2025</span></p>
-        <h3>Lógica Eco</h3>
-        <p><span class="pt">Série de vídeos curtos, de cerca de cinco minutos, sobre energia e sustentabilidade: mudanças climáticas, fontes renováveis e energia solar térmica. O projeto de extensão nasceu de uma parceria com a <a href="https://www.ecologicbr.com.br/" target="_blank" rel="noopener">Ecologic</a>, fabricante de aquecedores solares, e recebeu o primeiro lugar no Prêmio José Reis de Divulgação Científica e Tecnológica, edição especial COP30 (CNPq, 2025).</span><span class="en">A series of short videos, about five minutes each, on energy and sustainability: climate change, renewables and solar thermal energy. The outreach project grew out of a partnership with <a href="https://www.ecologicbr.com.br/" target="_blank" rel="noopener">Ecologic</a>, a solar water heater company, and won first place in the José Reis Prize for Science Communication, COP30 special edition (CNPq, 2025).</span></p>
-        <p><span class="pt">Os vídeos foram produzidos pela <a href="https://www.accofilmes.com.br/" target="_blank" rel="noopener">Acco Filmes</a>, de Pato Branco.</span><span class="en">The videos were produced by <a href="https://www.accofilmes.com.br/" target="_blank" rel="noopener">Acco Filmes</a>, based in Pato Branco.</span></p>
-        <div class="cta">
-          <a class="btn" href="https://www.youtube.com/playlist?list=PL_PoCnQXeqNJKAZ7yU-j0yZdTOOKI-I1M" target="_blank" rel="noopener"><span class="pt">Ver a série no YouTube</span><span class="en">See the series on YouTube</span></a>
-          <a class="btn" href="https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/premios/premiados" target="_blank" rel="noopener"><span class="pt">Premiados do Prêmio José Reis (CNPq)</span><span class="en">José Reis Prize winners (CNPq)</span></a>
-          <a class="btn" href="https://www.ecologicbr.com.br/" target="_blank" rel="noopener"><span class="pt">Site da Ecologic</span><span class="en">Ecologic website</span></a>
-          <a class="btn" href="https://www.accofilmes.com.br/" target="_blank" rel="noopener"><span class="pt">Site da Acco Filmes</span><span class="en">Acco Filmes website</span></a>
-        </div>
-      </div>
-      <div>
-        <a class="video has-thumb" id="le-video" style="background-image:url(logica-eco.jpg)" href="https://www.youtube.com/playlist?list=PL_PoCnQXeqNJKAZ7yU-j0yZdTOOKI-I1M" target="_blank" rel="noopener" aria-label="Assistir ao primeiro episódio de Lógica Eco">
-          <span class="vtitle">Lógica Eco</span>
-          <span class="play" aria-hidden="true"><svg viewBox="0 0 64 64" width="64" height="64"><circle cx="32" cy="32" r="30" fill="var(--surface)"/><path d="M26 20v24l20-12z" fill="var(--accent)"/></svg></span>
-          <span class="vsub"><span class="pt">Episódio 1 · assistir aqui</span><span class="en">Episode 1 · watch here</span></span>
-        </a>
-      </div>
-    </div>
-    <h3 class="nh talkh"><span class="pt">Palestras e apresentações</span><span class="en">Talks and presentations</span></h3>
-    <div class="card talk" id="palestra">
-      <a class="talkimg" href="https://www.sbpmat.org.br/24encontro/" target="_blank" rel="noopener"><img src="sbpmat-2026.jpg" alt="XXIV B-MRS Meeting, Curitiba, 2026" width="900" height="430" loading="lazy"></a>
-      <div class="talktxt"><span class="tag"><span class="pt">Palestra convidada · 2026</span><span class="en">Invited talk · 2026</span></span>
-      <h3>“Comunicação científica na internet: uma reflexão sobre causas e motivos para o fracasso e o sucesso”</h3>
-      <p><span class="pt">Palestra de abertura do primeiro workshop em comunicação científica do encontro anual da SBPMat (<a href="https://www.sbpmat.org.br/24encontro/" target="_blank" rel="noopener">XXIV B-MRS Meeting</a>, Curitiba, 27 de setembro a 1º de outubro de 2026), como palestrante convidado.</span><span class="en">Opening talk of the first workshop on science communication at the annual meeting of SBPMat, the Brazilian Materials Research Society (<a href="https://www.sbpmat.org.br/24encontro/" target="_blank" rel="noopener">XXIV B-MRS Meeting</a>, Curitiba, 27 September to 1 October 2026), as invited speaker. Title in English: “Science communication on the internet: a reflection on the causes and reasons for failure and success”.</span></p>
-      </div>
-    </div>
-    <div class="card talk" id="lyon2026">
-      <a class="talkimg" href="https://glass-lyon2026.sciencesconf.org/" target="_blank" rel="noopener"><img src="glass-lyon-2026.jpg" alt="GLASS LYON 2026, Lyon, 13–17 April 2026" width="695" height="298" loading="lazy"></a>
-      <div class="talktxt"><span class="tag"><span class="pt">Apresentação oral · 2026</span><span class="en">Oral presentation · 2026</span></span>
-      <h3>“The reuse of the cover glass to enhance solar energy sustainability in the Brazilian context”</h3>
-      <p><span class="pt">Apresentação oral no simpósio Glass, a Sustainable Material do <a href="https://glass-lyon2026.sciencesconf.org/" target="_blank" rel="noopener">GLASS LYON 2026</a>, encontro anual da International Commission on Glass realizado junto com a 18ª conferência da ESG, em Lyon, França, de 13 a 17 de abril de 2026.</span><span class="en">Oral presentation in the symposium Glass, a Sustainable Material at <a href="https://glass-lyon2026.sciencesconf.org/" target="_blank" rel="noopener">GLASS LYON 2026</a>, the International Commission on Glass annual meeting held jointly with the 18th ESG conference, in Lyon, France, 13–17 April 2026.</span></p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="contato">
   <div class="wrap">
     <h2><span class="pt">Contato</span><span class="en">Contact</span></h2>
@@ -890,6 +836,63 @@ Perda = \(16 / 1600 = 0{,}01 = 99\%\)</p>
         <li><a href="https://github.com/mbelancon" target="_blank" rel="noopener">GitHub</a><span>mbelancon</span></li>
       </ul>
     </div>
+    <details class="story aboutd" id="sobre">
+      <summary>
+        <span class="shead sm"><span class="pt">Sobre o professor</span><span class="en">About the professor</span></span>
+        <span class="sdek"><span class="pt">Apresentação, produção, fomento, prêmios e trajetória.</span><span class="en">Introduction, output, funding, awards and career path.</span></span>
+        <span class="smore"><span class="o"><span class="pt">Abrir</span><span class="en">Open</span></span><span class="c"><span class="pt">Fechar</span><span class="en">Close</span></span></span>
+      </summary>
+      <div class="sbody">
+    <div class="about">
+      <img class="portrait" src="foto.jpg" alt="Marcos Paulo Belançon" width="640" height="800">
+      <div class="prose">
+        <p class="pt">Sou físico formado pela Universidade Estadual de Maringá (graduação em 2007, mestrado em 2009 e doutorado em 2012), onde comecei a trabalhar com lente térmica e espelho térmico resolvidos no tempo e com vidros aluminosilicatos de cálcio dopados com Yb³⁺ e Ce³⁺, com estágio de doutorado na Université Claude Bernard Lyon 1. Fiz pós-doutorados na UNICAMP (2012–2013), com fibras ópticas de vidros teluritos, e na Université Pierre et Marie Curie, em Paris (2014–2015).</p>
+        <p class="pt">Desde 2013 sou professor da UTFPR, Câmpus Pato Branco, no Departamento Acadêmico de Física (DAFIS) e oriento dissertações de mestrado na área de química, em um <a href="https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgtp-pb" target="_blank" rel="noopener">programa de pós-graduação</a> do câmpus. Meu grupo trabalha com técnicas espectroscópicas, materiais ópticos e suas aplicações, desenvolve dispositivos e sensores em parceria com empresas, monta técnicas de medida sobre microcontroladores e integra a equipe que criou o centro temático em transição energética da universidade.</p>
+        <p class="pt">Entre 2025 e 2026 fiz um pós-doutorado na UEM, sob supervisão de Vitor S. Zanuto, e fui pesquisador visitante no CEMHTI (CNRS, Orléans), com o LE STUDIUM Visiting Researcher Award, do LE STUDIUM Loire Valley Institute for Advanced Studies, estudando vidros e vitrocerâmicas obtidos a partir de vidro reciclado de painéis solares.</p>
+        <p class="en">I am a physicist trained at the State University of Maringá (BSc 2007, MSc 2009, PhD 2012), where I started working on time-resolved thermal lens and thermal mirror methods and on Yb³⁺- and Ce³⁺-doped calcium aluminosilicate glasses, with a doctoral stay at Université Claude Bernard Lyon 1. I held postdoctoral positions at UNICAMP (2012–2013), on tellurite glass optical fibres, and at Université Pierre et Marie Curie in Paris (2014–2015).</p>
+        <p class="en">Since 2013 I have been a professor at UTFPR Pato Branco, in the Physics Department (DAFIS) and I supervise MSc dissertations in chemistry, in a <a href="https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgtp-pb" target="_blank" rel="noopener">graduate programme</a> on campus. My group works on spectroscopic techniques, optical materials and their applications, builds devices and sensors with industry partners, sets up measurement techniques on microcontrollers, and is part of the team that created the university's thematic centre on energy transition.</p>
+        <p class="en">In 2025–2026 I did a postdoc at UEM, supervised by Vitor S. Zanuto, and was a visiting researcher at CEMHTI (CNRS, Orléans), with the LE STUDIUM Visiting Researcher Award, from LE STUDIUM Loire Valley Institute for Advanced Studies, studying glasses and glass-ceramics made from recycled solar panel glass.</p>
+      </div>
+    </div>
+    <dl class="facts">
+      <div><dt><span class="pt">Instituição</span><span class="en">Institution</span></dt><dd>UTFPR · Pato Branco · DAFIS</dd></div>
+      <div class="fwide"><dt><span class="pt">Fomento</span><span class="en">Funding</span></dt><dd><ul class="flist">
+        <li><span class="pt">Bolsista de Produtividade em Pesquisa do CNPq, nível 2</span><span class="en">CNPq Research Productivity Fellow, level 2</span></li>
+        <li><span class="pt">Coordenador de dois projetos Universal do CNPq</span><span class="en">Principal investigator of two CNPq Universal grants</span></li>
+        <li><span class="pt">Integra a equipe do <a href="#projetos">INPIIF</a>, um INCT do CNPq</span><span class="en">Team member of <a href="#projetos">INPIIF</a>, a CNPq National Institute of Science and Technology (INCT)</span></li>
+        <li><span class="pt">Integra a equipe do <a href="#projetos">Centro Temático em Transição Energética</a> (FINEP) da UTFPR</span><span class="en">Team member of UTFPR's <a href="#projetos">Thematic Centre for Energy Transition</a> (FINEP)</span></li>
+      </ul></dd></div>
+      <div><dt><span class="pt">Prêmios</span><span class="en">Awards</span></dt><dd><ul class="flist">
+        <li><a href="https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/premios/premiados" target="_blank" rel="noopener"><span class="pt">1º lugar, Prêmio José Reis, edição COP30 (2025)</span><span class="en">1st place, José Reis Prize, COP30 edition (2025)</span></a></li>
+        <li><a href="https://www.lestudium-ias.com/fellows/marcos-belancon" target="_blank" rel="noopener"><span class="pt">LE STUDIUM Visiting Researcher Award, Vale do Loire, França (2025)</span><span class="en">LE STUDIUM Visiting Researcher Award, Loire Valley, France (2025)</span></a></li>
+      </ul></dd></div>
+      <div><dt><span class="pt">Colaboração</span><span class="en">Collaboration</span></dt><dd>CEMHTI–CNRS · <a href="https://www.lestudium-ias.com/fellows/marcos-belancon" target="_blank" rel="noopener">LE STUDIUM</a> · UEM</dd></div>
+      <div><dt><span class="pt">Produção</span><span class="en">Output</span></dt><dd><span class="pt">38 artigos em periódicos · 547 citações (Scopus, out/2026)</span><span class="en">38 journal articles · 547 citations (Scopus, Oct 2026)</span></dd></div>
+      <div><dt><span class="pt">Formação de pessoas</span><span class="en">Supervision</span></dt><dd><a href="#orientacoes"><span class="pt">Dissertações de mestrado orientadas e coorientadas na área de química</span><span class="en">MSc dissertations supervised and co-supervised in chemistry</span></a></dd></div>
+    </dl>
+    <details class="story traj" id="trajetoria">
+      <summary>
+        <span class="shead sm"><span class="pt">Trajetória</span><span class="en">Career path</span></span>
+        <span class="sdek"><span class="pt">Formação, pós-doutorados, cargos e prêmios, de 2004 até hoje.</span><span class="en">Education, postdocs, positions and awards, from 2004 to today.</span></span>
+        <span class="smore"><span class="o"><span class="pt">Abrir a linha do tempo</span><span class="en">Open the timeline</span></span><span class="c"><span class="pt">Fechar</span><span class="en">Close</span></span></span>
+      </summary>
+      <div class="sbody">
+    <ul class="time">
+      <li><span class="y">2025–2026</span><div><b><span class="pt">Pós-doutorado na UEM e pesquisador visitante no CEMHTI–CNRS</span><span class="en">Postdoc at UEM and visiting researcher at CEMHTI–CNRS</span></b><span class="d"><span class="pt">UEM: supervisão de Vitor S. Zanuto · CEMHTI: LE STUDIUM Visiting Researcher Award, Orléans, França</span><span class="en">UEM: supervised by Vitor S. Zanuto · CEMHTI: LE STUDIUM Visiting Researcher Award, Orléans, France</span></span></div></li>
+      <li><span class="y">2025</span><div><b><span class="pt">Prêmio José Reis de Divulgação Científica, edição especial COP30</span><span class="en">José Reis Prize for Science Communication, COP30 special edition</span></b><span class="d"><span class="pt">1º lugar (CNPq), com o projeto Lógica Eco · <a href="https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/premios/premiados" target="_blank" rel="noopener">lista de premiados</a></span><span class="en">1st place (CNPq), for the Lógica Eco project · <a href="https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/premios/premiados" target="_blank" rel="noopener">list of winners</a></span></span></div></li>
+      <li><span class="y">2021–2025</span><div><b><span class="pt">Assessor de Pesquisa</span><span class="en">Research Advisor</span></b><span class="d"><span class="pt">Diretoria de Pesquisa e Pós-Graduação, UTFPR Pato Branco</span><span class="en">Research and Graduate Studies Office, UTFPR Pato Branco</span></span></div></li>
+      <li><span class="y">2017–2019</span><div><b><span class="pt">Chefe do Departamento Acadêmico de Física</span><span class="en">Head of the Physics Department</span></b><span class="d">UTFPR Pato Branco</span></div></li>
+      <li><span class="y"><span class="pt">2013–hoje</span><span class="en">2013–now</span></span><div><b><span class="pt">Professor, UTFPR Câmpus Pato Branco</span><span class="en">Professor, UTFPR Pato Branco campus</span></b><span class="d"><span class="pt">DAFIS · pós-graduação na área de química (desde 2014) · linhas: materiais para energia solar, espectroscopia óptica, fenômenos fototérmicos</span><span class="en">DAFIS · graduate programme in chemistry (since 2014) · lines: solar energy materials, optical spectroscopy, photothermal phenomena</span></span></div></li>
+      <li><span class="y">2014–2015</span><div><b><span class="pt">Pós-doutorado, Université Pierre et Marie Curie</span><span class="en">Postdoc, Université Pierre et Marie Curie</span></b><span class="d"><span class="pt">Paris, França · bolsa CNPq</span><span class="en">Paris, France · CNPq fellowship</span></span></div></li>
+      <li><span class="y">2012–2013</span><div><b><span class="pt">Pós-doutorado, UNICAMP (IFGW)</span><span class="en">Postdoc, UNICAMP (IFGW)</span></b><span class="d"><span class="pt">Fibras ópticas fotônicas de sílica e vidros especiais · bolsa FAPESP</span><span class="en">Photonic optical fibres of silica and special glasses · FAPESP fellowship</span></span></div></li>
+      <li><span class="y">2009–2012</span><div><b><span class="pt">Doutorado em Física, UEM</span><span class="en">PhD in Physics, UEM</span></b><span class="d"><span class="pt">Vidros aluminosilicatos de cálcio dopados com Yb³⁺ e Ce³⁺ · orientador L. C. Malacarne · sanduíche em Lyon 1 (Y. Guyot)</span><span class="en">Yb³⁺- and Ce³⁺-doped calcium aluminosilicate glasses · advisor L. C. Malacarne · stay at Lyon 1 (Y. Guyot)</span></span></div></li>
+      <li><span class="y">2008–2009</span><div><b><span class="pt">Mestrado em Física, UEM</span><span class="en">MSc in Physics, UEM</span></b><span class="d"><span class="pt">Técnicas de espelho térmico e lente térmica para materiais semitransparentes e opacos</span><span class="en">Thermal mirror and thermal lens techniques for semitransparent and opaque materials</span></span></div></li>
+      <li><span class="y">2004–2007</span><div><b><span class="pt">Graduação em Física, UEM</span><span class="en">BSc in Physics, UEM</span></b><span class="d"><span class="pt">Efeito magnetocalórico em fases de Heusler</span><span class="en">Magnetocaloric effect in Heusler phases</span></span></div></li>
+    </ul>
+      </div>
+    </details>
+      </div>
+    </details>
   </div>
 </section>
 </main>
@@ -1192,7 +1195,7 @@ Perda = \(16 / 1600 = 0{,}01 = 99\%\)</p>
 
   // highlight the nav item of the section being read
   (function(){
-    var GROUP={sobre:"sobre",pesquisa:"pesquisa",projetos:"pesquisa",rede:"pesquisa",publicacoes:"pesquisa",orientacoes:"pesquisa",ferramentas:"ferramentas",divulgacao:"divulgacao",ensino:"ensino",contato:"contato"};
+    var GROUP={pesquisa:"pesquisa",projetos:"pesquisa",rede:"pesquisa",publicacoes:"pesquisa",orientacoes:"pesquisa",ferramentas:"ferramentas",divulgacao:"divulgacao",ensino:"ensino",contato:"contato"};
     var secs=Array.prototype.slice.call(document.querySelectorAll("main section[id]")).filter(function(x){return GROUP[x.id]});
     var nav=document.getElementById("topnav"),links=nav.querySelectorAll("a[data-k]"),cur=null,tick=false;
     function update(){tick=false;var k=null,line=Math.min(window.innerHeight*0.25,160);
@@ -1206,7 +1209,7 @@ Perda = \(16 / 1600 = 0{,}01 = 99\%\)</p>
   })();
 
   // open a collapsed block when a link points at it
-  function openTarget(){var h=location.hash.slice(1);if(!h)return;var el=document.getElementById(h);if(el&&el.tagName==="DETAILS")el.open=true}
+  function openTarget(){var h=location.hash.slice(1);if(!h)return;var el=document.getElementById(h);for(var p=el;p;p=p.parentElement){if(p.tagName==="DETAILS")p.open=true}}
   window.addEventListener("hashchange",openTarget);openTarget();
 
   var saved=null;try{saved=localStorage.getItem("mpb-lang")}catch(e){}
