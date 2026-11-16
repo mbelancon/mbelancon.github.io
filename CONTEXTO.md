@@ -26,6 +26,7 @@ pelo GitHub Pages. Atrativo para estudantes e funcional para ele como pesquisado
 - Menu: Pesquisa, Instrumentação, Divulgação Científica, Blog, Ensino, Contato; destaca a seção visível
 - Sobre: trajetória recolhida, só pós-docs e prêmios
 - Pesquisa: projetos (INPIIF, REH2V-FV), redes, publicações, orientações ("área de química", sem nome do programa)
+- Topo: foto redonda (`foto-topo.jpg`, recorte quadrado de `foto.jpg`) ao lado do nome; foto e nome levam ao "Sobre" e o abrem
 - Topo: quadro de palavras-chave clicáveis; "Fotoacústica e fototérmica" unifica TL, TM e fotoacústica
 - Um único mapa de coautores (nacionais e internacionais, incluindo os com 2 artigos em comum)
 - Instrumentação em destaque (SOI ilustrado); TMTL2 só divulgado, sem versão web
