@@ -1,6 +1,7 @@
 # Tags do blog: o nome usado nos posts (à esquerda) e como aparece em cada língua.
 energia:            {pt: "Energia",                 en: "Energy"}
 energia-solar:      {pt: "Energia solar",           en: "Solar energy"}
+energia-nuclear:    {pt: "Energia nuclear",         en: "Nuclear energy"}
 sustentabilidade:   {pt: "Sustentabilidade",        en: "Sustainability"}
 vidros:             {pt: "Vidros",                  en: "Glasses"}
 fototermica:        {pt: "Fototérmica",             en: "Photothermal"}
