@@ -1,0 +1,6 @@
+{%- assign mpt = "jan.,fev.,mar.,abr.,maio,jun.,jul.,ago.,set.,out.,nov.,dez." | split: "," -%}
+{%- assign men = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" | split: "," -%}
+{%- assign mi = include.d | date: "%-m" | minus: 1 -%}
+{%- assign dd = include.d | date: "%-d" -%}
+{%- assign yy = include.d | date: "%Y" -%}
+<span class="pt">{{ dd }} {{ mpt[mi] }} {{ yy }}</span><span class="en">{{ men[mi] }} {{ dd }}, {{ yy }}</span>

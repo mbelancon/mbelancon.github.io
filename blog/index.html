@@ -1,0 +1,28 @@
+---
+layout: base
+title_pt: Blog
+summary_pt: Vídeos curtos e textos de divulgação científica sobre física, vidros, energia e instrumentação, por Marcos Paulo Belançon (UTFPR).
+---
+<p class="eyebrow"><span class="pt">Divulgação científica</span><span class="en">Science communication</span></p>
+<h1>Blog</h1>
+<p class="sub"><span class="pt">Vídeos curtos com um texto para quem quer ir além: física, vidros, energia e instrumentação, do laboratório para a sala de aula.</span><span class="en">Short videos with a text for those who want to go further: physics, glasses, energy and instrumentation, from the lab to the classroom.</span></p>
+
+{%- assign used = "" | split: "" -%}
+{%- for p in site.posts -%}{%- for tg in p.tags -%}{%- unless used contains tg -%}{%- assign used = used | push: tg -%}{%- endunless -%}{%- endfor -%}{%- endfor %}
+{%- if used.size > 0 %}
+<div class="chips" id="blog-chips" role="group" aria-label="Filtrar por tema / Filter by topic">
+  <button class="chip" type="button" data-t="" aria-pressed="true"><span class="pt">Todos</span><span class="en">All</span> <span class="tag">{{ site.posts.size }}</span></button>
+  {%- for tg in used %}{% assign T = site.data.tags[tg] %}
+  <button class="chip" type="button" data-t="{{ tg }}" aria-pressed="false">{% if T %}<span class="pt">{{ T.pt }}</span><span class="en">{{ T.en }}</span>{% else %}{{ tg }}{% endif %}</button>
+  {%- endfor %}
+</div>
+{%- endif %}
+
+<div class="bgrid" id="blog-list">
+{%- for p in site.posts %}
+{% include card.html p=p %}
+{%- endfor %}
+</div>
+{%- if site.posts.size == 0 %}
+<p class="sub"><span class="pt">Em breve.</span><span class="en">Coming soon.</span></p>
+{%- endif %}
