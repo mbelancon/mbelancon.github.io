@@ -1,0 +1,16 @@
+# Jekyll (GitHub Pages). O index.html não tem cabeçalho "---", então é copiado como está.
+title: Marcos Paulo Belançon
+url: https://mbelancon.github.io
+baseurl: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
+permalink: /blog/:title/
+timezone: America/Sao_Paulo
+exclude:
+  - README.md
+  - CONTEXTO.md
+defaults:
+  - scope: {path: "", type: posts}
+    values: {layout: post}

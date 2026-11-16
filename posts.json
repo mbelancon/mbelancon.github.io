@@ -1,0 +1,19 @@
+---
+layout: null
+permalink: /posts.json
+---
+[
+{%- for p in site.posts %}
+  {
+    "url": {{ p.url | relative_url | jsonify }},
+    "date": {{ p.date | date: "%Y-%m-%d" | jsonify }},
+    "title_pt": {{ p.title_pt | jsonify }},
+    "title_en": {{ p.title_en | jsonify }},
+    "summary_pt": {{ p.summary_pt | jsonify }},
+    "summary_en": {{ p.summary_en | jsonify }},
+    "video": {% if p.youtube or p.playlist %}true{% else %}false{% endif %},
+    "thumb": {% capture img %}{% include thumb.txt p=p %}{% endcapture %}{{ img | jsonify }},
+    "tags": {{ p.tags | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+]

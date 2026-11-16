@@ -1,0 +1,24 @@
+---
+layout: null
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-BR">
+  <title>Blog · Marcos Paulo Belançon</title>
+  <subtitle>Vídeos curtos e textos de divulgação científica (PT/EN)</subtitle>
+  <link href="{{ '/feed.xml' | absolute_url }}" rel="self"/>
+  <link href="{{ '/blog/' | absolute_url }}"/>
+  <id>{{ '/blog/' | absolute_url }}</id>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <author><name>Marcos Paulo Belançon</name></author>
+{%- for p in site.posts limit:20 %}
+  <entry>
+    <title>{{ p.title_pt | xml_escape }} / {{ p.title_en | xml_escape }}</title>
+    <link href="{{ p.url | absolute_url }}"/>
+    <id>{{ p.url | absolute_url }}</id>
+    <updated>{{ p.date | date_to_xmlschema }}</updated>
+    <summary>{{ p.summary_pt | xml_escape }}{% if p.summary_en %} — {{ p.summary_en | xml_escape }}{% endif %}</summary>
+    <content type="html">{{ p.content | xml_escape }}</content>
+  </entry>
+{%- endfor %}
+</feed>

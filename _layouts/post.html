@@ -1,0 +1,32 @@
+---
+layout: base
+---
+<article class="post">
+  <p class="eyebrow">Blog · {% include date.html d=page.date %}</p>
+  <h1><span class="pt">{{ page.title_pt }}</span><span class="en">{{ page.title_en }}</span></h1>
+  {%- if page.summary_pt %}
+  <p class="lead"><span class="pt">{{ page.summary_pt }}</span><span class="en">{{ page.summary_en }}</span></p>
+  {%- endif %}
+  {%- if page.tags.size > 0 %}
+  <div class="meta">{% for tg in page.tags %}{% assign T = site.data.tags[tg] %}<a class="btag" href="{{ '/blog/' | relative_url }}?tag={{ tg }}">{% if T %}<span class="pt">{{ T.pt }}</span><span class="en">{{ T.en }}</span>{% else %}{{ tg }}{% endif %}</a>{% endfor %}</div>
+  {%- endif %}
+
+  {%- if page.youtube or page.playlist %}
+  {%- capture img %}{% include thumb.txt p=page %}{% endcapture %}
+  {%- if page.youtube %}{% assign watch = "https://www.youtube.com/watch?v=" | append: page.youtube %}{% else %}{% assign watch = "https://www.youtube.com/playlist?list=" | append: page.playlist %}{% endif %}
+  <a class="player" href="{{ watch }}" target="_blank" rel="noopener" data-yt="{{ page.youtube }}" data-list="{{ page.playlist }}" style="background-image:url({{ img }})" aria-label="Assistir ao vídeo / Watch the video">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#F5F8F8"/><path d="M26 20v24l20-12z" fill="#0B6E6A"/></svg>
+  </a>
+  {%- endif %}
+
+  <div class="pbody">
+{{ content }}
+  </div>
+
+  <div class="back">
+    <a class="btn" href="{{ '/blog/' | relative_url }}"><span class="pt">← Todos os posts</span><span class="en">← All posts</span></a>
+    {%- if watch %}
+    <a class="btn" href="{{ watch }}" target="_blank" rel="noopener"><span class="pt">Abrir no YouTube</span><span class="en">Open on YouTube</span></a>
+    {%- endif %}
+  </div>
+</article>
